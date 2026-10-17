@@ -71,7 +71,7 @@
 
   <main>
 
-    <section class="section fade-in" id="s1">
+    <section class="section" id="s1">
       <div class="section-head">
         <span class="section-num">01</span>
         <h2 class="section-title">منافع شبکه و کاربردهای آن</h2>
@@ -183,7 +183,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s2">
+    <section class="section" id="s2">
       <div class="section-head">
         <span class="section-num">02</span>
         <h2 class="section-title">مدل‌های آرایش شبکه</h2>
@@ -269,38 +269,36 @@
           </defs>
 
           <!-- Client Box -->
-          <rect x="40" y="110" width="200" height="120" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
-          <text x="140" y="145" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Client Machine</text>
-          <text x="140" y="170" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">مشتری</text>
-          <circle cx="140" cy="200" r="14" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
-          <text x="140" y="205" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="10">پروسه</text>
+          <rect x="40" y="80" width="180" height="160" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+          <text x="130" y="115" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Client Machine</text>
+          <text x="130" y="140" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">مشتری</text>
+          <circle cx="130" cy="190" r="16" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+          <text x="130" y="195" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="10">پروسه</text>
 
           <!-- Network Ellipse -->
-          <ellipse cx="400" cy="170" rx="110" ry="60" fill="#161b22" stroke="#6e7681" stroke-width="1.5"/>
-          <text x="400" y="175" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14">Network</text>
+          <ellipse cx="400" cy="160" rx="110" ry="80" fill="#161b22" stroke="#6e7681" stroke-width="1.5"/>
+          <text x="400" y="165" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14">Network</text>
 
           <!-- Server Box -->
-          <rect x="560" y="110" width="200" height="120" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
-          <text x="660" y="145" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Server Machine</text>
-          <text x="660" y="170" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">سرویس‌دهنده</text>
-          <circle cx="660" cy="200" r="14" fill="none" stroke="#3fb950" stroke-width="1.5"/>
-          <text x="660" y="205" text-anchor="middle" fill="#3fb950" font-family="Vazirmatn, sans-serif" font-size="10">پروسه</text>
+          <rect x="580" y="80" width="180" height="160" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+          <text x="670" y="115" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Server Machine</text>
+          <text x="670" y="140" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">سرویس‌دهنده</text>
+          <circle cx="670" cy="190" r="16" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+          <text x="670" y="195" text-anchor="middle" fill="#3fb950" font-family="Vazirmatn, sans-serif" font-size="10">پروسه</text>
 
           <!-- Request Arrow (Client -> Network) -->
-          <line x1="240" y1="140" x2="280" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#mk-blue-req)"/>
-          <!-- Request Text (Above Arrow) -->
-          <text x="260" y="125" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="600">Request</text>
+          <line x1="220" y1="120" x2="280" y2="120" stroke="#58a6ff" stroke-width="2" marker-end="url(#mk-blue-req)"/>
+          <text x="250" y="105" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="13" font-weight="600">Request</text>
 
           <!-- Request Arrow (Network -> Server) -->
-          <line x1="520" y1="140" x2="560" y2="140" stroke="#58a6ff" stroke-width="2" marker-end="url(#mk-blue-req)"/>
+          <line x1="520" y1="120" x2="580" y2="120" stroke="#58a6ff" stroke-width="2" marker-end="url(#mk-blue-req)"/>
 
           <!-- Reply Arrow (Server -> Network) -->
-          <line x1="560" y1="220" x2="520" y2="220" stroke="#3fb950" stroke-width="2" marker-end="url(#mk-green-rep)"/>
-          <!-- Reply Text (Below Arrow) -->
-          <text x="540" y="240" text-anchor="middle" fill="#3fb950" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="600">Reply</text>
+          <line x1="580" y1="200" x2="520" y2="200" stroke="#3fb950" stroke-width="2" marker-end="url(#mk-green-rep)"/>
+          <text x="550" y="220" text-anchor="middle" fill="#3fb950" font-family="Vazirmatn, sans-serif" font-size="13" font-weight="600">Reply</text>
 
           <!-- Reply Arrow (Network -> Client) -->
-          <line x1="280" y1="220" x2="240" y2="220" stroke="#3fb950" stroke-width="2" marker-end="url(#mk-green-rep)"/>
+          <line x1="280" y1="200" x2="220" y2="200" stroke="#3fb950" stroke-width="2" marker-end="url(#mk-green-rep)"/>
         </svg>
         <div class="diagram-caption">
           مدل مشتری/سرویس‌دهنده بر «درخواست و پاسخ» مبتنی است. مشتری درخواست می‌فرستد، سرور پردازش می‌کند و پاسخ برمی‌گرداند.
@@ -369,9 +367,6 @@
             <marker id="mk-p2p" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto">
               <polygon points="0 0, 6 2.5, 0 5" fill="#8b949e"/>
             </marker>
-            <marker id="mk-p2p-rev" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto">
-              <polygon points="0 0, 6 2.5, 0 5" fill="#8b949e"/>
-            </marker>
           </defs>
 
           <!-- Peer A (Top Left) -->
@@ -437,7 +432,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s3">
+    <section class="section" id="s3">
       <div class="section-head">
         <span class="section-num">03</span>
         <h2 class="section-title">تکنولوژی انتقال</h2>
@@ -526,7 +521,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s4">
+    <section class="section" id="s4">
       <div class="section-head">
         <span class="section-num">04</span>
         <h2 class="section-title">تقسیم‌بندی شبکه از نظر مقیاس</h2>
@@ -650,7 +645,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s5">
+    <section class="section" id="s5">
       <div class="section-head">
         <span class="section-num">05</span>
         <h2 class="section-title">توپولوژی‌های شبکه</h2>
@@ -878,7 +873,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s6">
+    <section class="section" id="s6">
       <div class="section-head">
         <span class="section-num">06</span>
         <h2 class="section-title">اینترنت: ساختار و اجزا</h2>
@@ -994,7 +989,7 @@
       </p>
     </section>
 
-    <section class="section fade-in" id="s7">
+    <section class="section" id="s7">
       <div class="section-head">
         <span class="section-num">07</span>
         <h2 class="section-title">پروتکل چیست؟</h2>
@@ -1080,7 +1075,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s8">
+    <section class="section" id="s8">
       <div class="section-head">
         <span class="section-num">08</span>
         <h2 class="section-title">شبکه‌های دسترسی</h2>
@@ -1215,7 +1210,7 @@
       </p>
     </section>
 
-    <section class="section fade-in" id="s9">
+    <section class="section" id="s9">
       <div class="section-head">
         <span class="section-num">09</span>
         <h2 class="section-title">رسانه‌های فیزیکی انتقال</h2>
@@ -1344,7 +1339,7 @@
       </p>
     </section>
 
-    <section class="section fade-in" id="s10">
+    <section class="section" id="s10">
       <div class="section-head">
         <span class="section-num">10</span>
         <h2 class="section-title">هسته شبکه: سوئیچینگ بسته و مداری</h2>
@@ -1502,7 +1497,7 @@
       </div>
     </section>
 
-    <section class="section fade-in" id="s11">
+    <section class="section" id="s11">
       <div class="section-head">
         <span class="section-num">11</span>
         <h2 class="section-title">اینترنت: شبکه‌ای از شبکه‌ها</h2>
@@ -1660,7 +1655,7 @@
     </section>
 
     <!-- بخش ۱۲ کامل با توضیح تمام فرمول‌ها -->
-    <section class="section fade-in" id="s12">
+    <section class="section" id="s12">
       <div class="section-head">
         <span class="section-num">12</span>
         <h2 class="section-title">کارایی شبکه: تأخیر، اتلاف، توان عملیاتی</h2>
@@ -2332,7 +2327,7 @@ N_avg = ρ / (1 - ρ)</pre>
       </p>
     </section>
 
-    <section class="section fade-in" id="s13">
+    <section class="section" id="s13">
       <div class="section-head">
         <span class="section-num">13</span>
         <h2 class="section-title">امنیت شبکه</h2>
@@ -2452,7 +2447,7 @@ N_avg = ρ / (1 - ρ)</pre>
       </ul>
     </section>
 
-    <section class="section fade-in" id="s14">
+    <section class="section" id="s14">
       <div class="section-head">
         <span class="section-num">14</span>
         <h2 class="section-title">لایه‌های پروتکل و مدل‌های مرجع</h2>
@@ -2826,7 +2821,7 @@ N_avg = ρ / (1 - ρ)</pre>
       </div>
     </section>
 
-    <section class="section fade-in" id="s15">
+    <section class="section" id="s15">
       <div class="section-head">
         <span class="section-num">15</span>
         <h2 class="section-title">کپسوله‌سازی</h2>
@@ -2917,7 +2912,7 @@ N_avg = ρ / (1 - ρ)</pre>
       </p>
     </section>
 
-    <section class="section fade-in" id="s16">
+    <section class="section" id="s16">
       <div class="section-head">
         <span class="section-num">16</span>
         <h2 class="section-title">آدرس‌دهی IP</h2>
@@ -3109,7 +3104,7 @@ N_avg = ρ / (1 - ρ)</pre>
       </p>
     </section>
 
-    <section class="section fade-in" id="s17">
+    <section class="section" id="s17">
       <div class="section-head">
         <span class="section-num">17</span>
         <h2 class="section-title">آدرس‌های خاص در IPv4</h2>
@@ -3161,7 +3156,7 @@ N_avg = ρ / (1 - ρ)</pre>
       </p>
     </section>
 
-    <section class="section fade-in" id="s18">
+    <section class="section" id="s18">
       <div class="section-head">
         <span class="section-num">18</span>
         <h2 class="section-title">زیرشبکه‌بندی (Subnetting)</h2>
