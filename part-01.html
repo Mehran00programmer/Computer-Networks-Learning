@@ -268,36 +268,29 @@
             </marker>
           </defs>
 
-          <!-- Client Box -->
           <rect x="40" y="80" width="180" height="160" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
           <text x="130" y="115" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Client Machine</text>
           <text x="130" y="140" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">مشتری</text>
           <circle cx="130" cy="190" r="16" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
           <text x="130" y="195" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="10">پروسه</text>
 
-          <!-- Network Ellipse -->
           <ellipse cx="400" cy="160" rx="110" ry="80" fill="#161b22" stroke="#6e7681" stroke-width="1.5"/>
           <text x="400" y="165" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14">Network</text>
 
-          <!-- Server Box -->
           <rect x="580" y="80" width="180" height="160" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
           <text x="670" y="115" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Server Machine</text>
           <text x="670" y="140" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">سرویس‌دهنده</text>
           <circle cx="670" cy="190" r="16" fill="none" stroke="#3fb950" stroke-width="1.5"/>
           <text x="670" y="195" text-anchor="middle" fill="#3fb950" font-family="Vazirmatn, sans-serif" font-size="10">پروسه</text>
 
-          <!-- Request Arrow (Client -> Network) -->
           <line x1="220" y1="120" x2="280" y2="120" stroke="#58a6ff" stroke-width="2" marker-end="url(#mk-blue-req)"/>
           <text x="250" y="105" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="13" font-weight="600">Request</text>
 
-          <!-- Request Arrow (Network -> Server) -->
           <line x1="520" y1="120" x2="580" y2="120" stroke="#58a6ff" stroke-width="2" marker-end="url(#mk-blue-req)"/>
 
-          <!-- Reply Arrow (Server -> Network) -->
           <line x1="580" y1="200" x2="520" y2="200" stroke="#3fb950" stroke-width="2" marker-end="url(#mk-green-rep)"/>
           <text x="550" y="220" text-anchor="middle" fill="#3fb950" font-family="Vazirmatn, sans-serif" font-size="13" font-weight="600">Reply</text>
 
-          <!-- Reply Arrow (Network -> Client) -->
           <line x1="280" y1="200" x2="220" y2="200" stroke="#3fb950" stroke-width="2" marker-end="url(#mk-green-rep)"/>
         </svg>
         <div class="diagram-caption">
@@ -360,7 +353,6 @@
         این مدل بیشتر در شبکه‌های کوچک و خانگی استفاده می‌شود.
       </p>
 
-      <!-- P2P Diagram -->
       <div class="diagram">
         <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="نمودار مدل همتا به همتا">
           <defs>
@@ -369,43 +361,29 @@
             </marker>
           </defs>
 
-          <!-- Peer A (Top Left) -->
           <rect x="80" y="60" width="140" height="80" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
           <text x="150" y="95" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Peer A</text>
           <text x="150" y="120" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">همتا</text>
 
-          <!-- Peer B (Top Right) -->
           <rect x="580" y="60" width="140" height="80" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
           <text x="650" y="95" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Peer B</text>
           <text x="650" y="120" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">همتا</text>
 
-          <!-- Peer C (Bottom Left) -->
           <rect x="80" y="260" width="140" height="80" rx="8" fill="#161b22" stroke="#d29922" stroke-width="2"/>
           <text x="150" y="295" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Peer C</text>
           <text x="150" y="320" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">همتا</text>
 
-          <!-- Peer D (Bottom Right) -->
           <rect x="580" y="260" width="140" height="80" rx="8" fill="#161b22" stroke="#f85149" stroke-width="2"/>
           <text x="650" y="295" text-anchor="middle" fill="#e6edf3" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600">Peer D</text>
           <text x="650" y="320" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">همتا</text>
 
-          <!-- Connections -->
-          <!-- A to B (Top) -->
           <line x1="220" y1="100" x2="580" y2="100" stroke="#8b949e" stroke-width="2" marker-end="url(#mk-p2p)"/>
-          <!-- A to C (Left) -->
           <line x1="150" y1="140" x2="150" y2="260" stroke="#8b949e" stroke-width="2" marker-end="url(#mk-p2p)"/>
-          <!-- A to D (Diagonal) -->
           <line x1="220" y1="130" x2="580" y2="270" stroke="#8b949e" stroke-width="2" marker-end="url(#mk-p2p)"/>
-          
-          <!-- B to C (Diagonal) -->
           <line x1="580" y1="130" x2="220" y2="270" stroke="#8b949e" stroke-width="2" marker-end="url(#mk-p2p)"/>
-          <!-- B to D (Right) -->
           <line x1="650" y1="140" x2="650" y2="260" stroke="#8b949e" stroke-width="2" marker-end="url(#mk-p2p)"/>
-          
-          <!-- C to D (Bottom) -->
           <line x1="220" y1="300" x2="580" y2="300" stroke="#8b949e" stroke-width="2" marker-end="url(#mk-p2p)"/>
 
-          <!-- Central Text -->
           <text x="400" y="200" text-anchor="middle" fill="#58a6ff" font-family="Vazirmatn, sans-serif" font-size="14" font-weight="600">ارتباط دوطرفه (همه با همه)</text>
           <text x="400" y="220" text-anchor="middle" fill="#8b949e" font-family="Vazirmatn, sans-serif" font-size="12">هیچ گره مرکزی یا سرور ثابتی وجود ندارد</text>
 
@@ -1654,7 +1632,6 @@
       </div>
     </section>
 
-    <!-- بخش ۱۲ کامل با توضیح تمام فرمول‌ها -->
     <section class="section fade-in" id="s12">
       <div class="section-head">
         <span class="section-num">12</span>
@@ -3634,5 +3611,47 @@ d_total = d_trans + d_prop
 
 <script src="assets/app.js"></script>
 
+<!-- FIX: Force-show very tall sections that IntersectionObserver's 8% threshold can never trigger -->
+<script>
+(function () {
+  var tallIds = ['s12', 's14', 's16', 's18'];
+  var targets = [];
+  for (var i = 0; i < tallIds.length; i++) {
+    var el = document.getElementById(tallIds[i]);
+    if (el && el.classList.contains('fade-in') && !el.classList.contains('visible')) {
+      targets.push(el);
+    }
+  }
+  if (!targets.length) return;
+
+  if ('IntersectionObserver' in window) {
+    var tallObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          tallObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function (el) { tallObserver.observe(el); });
+  } else {
+    targets.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  // Safety fallback: if user is already scrolled near these sections on page load, or
+  // observer somehow doesn't fire, force-show after 1.2s.
+  setTimeout(function () {
+    targets.forEach(function (el) {
+      if (!el.classList.contains('visible')) {
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 2 && rect.bottom > 0) {
+          el.classList.add('visible');
+        }
+      }
+    });
+  }, 1200);
+})();
+</script>
+
 </body>
-            </html>
+  </html>
