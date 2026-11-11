@@ -1444,7 +1444,9 @@
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>d_trans = L / R
+        <pre>        L
+d_trans = ───
+        R
 
 L = طول بسته (bit)
 R = نرخ لینک (bit/s)</pre>
@@ -1471,8 +1473,9 @@ R = نرخ لینک (bit/s)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">محاسبه</span>
         </div>
-        <pre>d_trans = L / R
-        = 10,000 / (100 × 10^6)
+        <pre>          10,000
+d_trans = ───────────
+          100 × 10^6
         = 10^-4 s
         = 0.1 ms</pre>
       </div>
@@ -1826,7 +1829,7 @@ R = نرخ لینک (bit/s)</pre>
         روتر بستگی دارد و اصلاً مقدار ثابتی ندارد. در یک
         شبکه شلوغ، تأخیر صف می‌تواند از چند میکروثانیه تا
         چند میلی‌ثانیه متغیر باشد. در بخش ۹ همین درس، با
-        مفهوم <strong>شدت ترافیک</strong> (rho) روش دقیق
+        مفهوم <strong>شدت ترافیک</strong> (ρ) روش دقیق
         محاسبه میانگین این تأخیر را یاد می‌گیریم.
       </p>
 
@@ -1848,7 +1851,7 @@ R = نرخ لینک (bit/s)</pre>
         بیشتر، طولانی‌تر)، (۲) گشادی دهانه لوله (هر چه
         تنگ‌تر، طولانی‌تر). در شبکه، «حجم آب» همان طول
         بسته (<bdi>L</bdi>) است و «گشادی لوله» همان نرخ لینک
-        (<bdi>R</bdi>). پس تأخیر انتقال می‌شود <bdi>L / R</bdi>.
+        (<bdi>R</bdi>). پس تأخیر انتقال می‌شود L تقسیم بر R.
       </p>
       <p>
         نکته بسیار مهم: <strong>این تأخیر اصلاً به طول کابل
@@ -1862,7 +1865,9 @@ R = نرخ لینک (bit/s)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">فرمول تأخیر انتقال</span>
         </div>
-        <pre>d_trans = L / R
+        <pre>        L
+d_trans = ───
+        R
 
 L = طول بسته (bit)
 R = نرخ انتقال لینک (bps)</pre>
@@ -1881,8 +1886,9 @@ R = نرخ انتقال لینک (bps)</pre>
         <pre>L = 1250 × 8 = 10,000 bit
 R = 10^6 bps
 
-d_trans = L / R
-        = 10,000 / 10^6
+             10,000
+d_trans = ────────────
+              10^6
         = 0.01 s
         = 10 ms</pre>
       </div>
@@ -1903,8 +1909,9 @@ d_trans = L / R
         <pre>L = 10,000 bit
 R = 10^9 bps
 
-d_trans = L / R
-        = 10,000 / 10^9
+             10,000
+d_trans = ────────────
+              10^9
         = 10^-5 s
         = 0.01 ms
         = 10 μs</pre>
@@ -1956,7 +1963,9 @@ d_trans = L / R
         <div class="code-block-header">
           <span class="code-block-lang">فرمول تأخیر انتشار</span>
         </div>
-        <pre>d_prop = d / s
+        <pre>        d
+d_prop = ───
+        s
 
 d = فاصله فیزیکی (m)
 s = سرعت انتشار سیگنال (m/s)</pre>
@@ -1985,8 +1994,9 @@ s = سرعت انتشار سیگنال (m/s)</pre>
         <pre>d = 20 km = 20,000 m
 s = 2 × 10^8 m/s
 
-d_prop = d / s
-       = 20,000 / (2 × 10^8)
+             20,000
+d_prop = ─────────────────
+          2 × 10^8
        = 10^-4 s
        = 0.1 ms</pre>
       </div>
@@ -2009,8 +2019,9 @@ d_prop = d / s
         <pre>d = 200,000 km = 2 × 10^8 m
 s = 3 × 10^8 m/s
 
-d_prop = d / s
-       = (2 × 10^8) / (3 × 10^8)
+             2 × 10^8
+d_prop = ─────────────────
+             3 × 10^8
        = 0.667 s
        ≈ 667 ms</pre>
       </div>
@@ -2095,7 +2106,7 @@ d_prop = d / s
         <li>
           <strong>تأخیر انتشار</strong> = زمان رسیدن
           <em>اولین</em> ماشین از پل عوارضی تا مشهد =
-          <bdi>900 / 100 = 9 h</bdi>. (مشابه زمانی که
+          <bdi>900 ÷ 100 = 9 h</bdi>. (مشابه زمانی که
           اولین بیت به مقصد می‌رسد)
         </li>
       </ul>
@@ -2130,7 +2141,10 @@ d_prop = d / s
           <span class="code-block-lang">فرمول</span>
         </div>
         <pre>d_total = d_trans + d_prop
-        = L/R + d/s</pre>
+
+        L     d
+      = ─── + ───
+        R     s</pre>
       </div>
 
       <p>
@@ -2149,15 +2163,17 @@ R = 20 × 10^6 bps
 d = 10 km = 10,000 m
 s = 3 × 10^8 m/s
 
-d_trans = L / R
-        = 10,000 / (20 × 10^6)
+             10,000
+d_trans = ─────────────────
+          20 × 10^6
         = 5 × 10^-4 s
         = 0.5 ms
 
-d_prop = d / s
-       = 10,000 / (3 × 10^8)
-       = 3.33 × 10^-5 s
-       ≈ 0.033 ms
+             10,000
+d_prop  = ─────────────────
+           3 × 10^8
+        = 3.33 × 10^-5 s
+        ≈ 0.033 ms
 
 d_total = d_trans + d_prop
         = 0.5 + 0.033
@@ -2185,7 +2201,9 @@ d_total = d_trans + d_prop
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>d_total = Sum (L/Ri + di/s)</pre>
+        <pre>            N  ⎛  L     di ⎞
+d_total =  ∑  ⎜ ─── + ─── ⎟
+           i=1 ⎝  Ri    s  ⎠</pre>
       </div>
 
       <p>
@@ -2227,38 +2245,41 @@ d_total = sum1 + sum2
       <p>
         برای تحلیل دقیق صف، از مفهوم «شدت ترافیک» (Traffic
         Intensity) استفاده می‌کنیم. این معیار نشان می‌دهد
-        چقدر لینک خروجی شلوغ است:
+        چقدر لینک خروجی شلوغ است. علامت این کمیت <bdi>ρ</bdi>
+        (رو) است:
       </p>
 
       <div class="code-block">
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>rho = L × a / R
+        <pre>        L × a
+ρ = ─────────────
+           R
 
 L   = طول بسته (bit)
 a   = میانگین نرخ ورودی بسته (packet/s)
 R   = نرخ انتقال لینک (bps)
-rho = شدت ترافیک (بین 0 و 1)</pre>
+ρ   = شدت ترافیک (بین 0 و 1)</pre>
       </div>
 
       <p>
-        عدد حاصل (rho) بین 0 و 1 است و سه حالت دارد:
+        عدد حاصل (ρ) بین 0 و 1 است و سه حالت دارد:
       </p>
 
       <ul>
         <li>
-          <strong>rho ≈ 0:</strong> لینک تقریباً خالی است.
+          <strong>ρ ≈ 0:</strong> لینک تقریباً خالی است.
           میانگین تأخیر در صف کم است. بسته‌ها بلافاصله
           ارسال می‌شوند.
         </li>
         <li>
-          <strong>rho → 1:</strong> لینک تقریباً پر است.
+          <strong>ρ → 1:</strong> لینک تقریباً پر است.
           صف به‌سرعت رشد می‌کند. میانگین تأخیر در صف زیاد
           می‌شود و به‌سرعت بالا می‌رود.
         </li>
         <li>
-          <strong>rho &gt; 1:</strong> نرخ ورودی از نرخ
+          <strong>ρ &gt; 1:</strong> نرخ ورودی از نرخ
           سرویس بیشتر است. صف بی‌نهایت رشد می‌کند و
           بسته‌ها از دست می‌روند. عملاً شبکه از کار
           می‌افتد.
@@ -2275,14 +2296,17 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>rho = L × a / R
-    = 10,000 × 50 / 10^6
-    = 500,000 / 10^6
+        <pre>        10,000 × 50
+ρ = ─────────────────
+            10^6
+        500,000
+    = ─────────────
+          10^6
     = 0.5</pre>
       </div>
 
       <p>
-        پاسخ: <bdi>rho = 0.5</bdi>. یعنی لینک حدود ۵۰٪ شلوغ
+        پاسخ: <bdi>ρ = 0.5</bdi>. یعنی لینک حدود ۵۰٪ شلوغ
         است و تأخیر صف نسبتاً کم خواهد بود.
       </p>
 
@@ -2294,16 +2318,17 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
 
       <h4>الف) نرخ ورودی بیت (λ)</h4>
       <p>
-        اگر <code>a</code> بسته در ثانیه وارد صف شود و هر
-        بسته <code>L</code> bit باشد، نرخ ورودی بیت برابر
-        است با:
+        علامت <bdi>λ</bdi> (لامبدا) نشان‌دهنده نرخ ورودی بیت
+        به صف است. اگر <code>a</code> بسته در ثانیه وارد صف
+        شود و هر بسته <code>L</code> bit باشد، نرخ ورودی بیت
+        برابر است با:
       </p>
 
       <div class="code-block">
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>lambda = L × a</pre>
+        <pre>λ = L × a</pre>
       </div>
 
       <p>
@@ -2315,13 +2340,14 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>lambda = 10,000 × 100
-       = 1,000,000 bps
-       = 1 Mbps</pre>
+        <pre>λ = 10,000 × 100
+  = 1,000,000 bps
+  = 1 Mbps</pre>
       </div>
 
       <h4>ب) نرخ خروجی (μ)</h4>
       <p>
+        علامت <bdi>μ</bdi> (مو) نشان‌دهنده نرخ خروجی است.
         نرخ خروجی همان نرخ انتقال لینک است:
       </p>
 
@@ -2329,33 +2355,40 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>mu = R</pre>
+        <pre>μ = R</pre>
       </div>
 
       <h4>پ) شدت ترافیک (ρ)</h4>
       <p>
-        نسبت نرخ ورودی به نرخ خروجی:
+        نسبت نرخ ورودی به نرخ خروجی را شدت ترافیک (ρ) می‌نامیم:
       </p>
 
       <div class="code-block">
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>rho = lambda / mu
-    = (L × a) / R</pre>
+        <pre>        λ
+ρ = ─────────
+        μ
+
+        L × a
+  = ─────────────
+           R</pre>
       </div>
 
       <p>
-        <strong>مثال:</strong> اگر <bdi>lambda = 0.8 Mbps</bdi> و
-        <bdi>mu = 1 Mbps</bdi> باشد:
+        <strong>مثال:</strong> اگر <bdi>λ = 0.8 Mbps</bdi> و
+        <bdi>μ = 1 Mbps</bdi> باشد:
       </p>
 
       <div class="code-block">
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>rho = 0.8 / 1
-    = 0.8</pre>
+        <pre>        0.8
+ρ = ─────────
+          1
+  = 0.8</pre>
       </div>
 
       <h4>ت) میانگین تأخیر در صف (T_Q)</h4>
@@ -2368,11 +2401,13 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>T_Q = rho × L / (R × (1 - rho))</pre>
+        <pre>              ρ × L
+T_Q = ─────────────────────
+        R × (1 − ρ)</pre>
       </div>
 
       <p>
-        <strong>مثال:</strong> اگر <bdi>rho = 0.5</bdi>،
+        <strong>مثال:</strong> اگر <bdi>ρ = 0.5</bdi>،
         <bdi>L = 10000 bit</bdi>، <bdi>R = 10^6 bps</bdi> باشد:
       </p>
 
@@ -2380,9 +2415,17 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>T_Q = 0.5 × 10,000 / (10^6 × (1 - 0.5))
-    = 5,000 / (10^6 × 0.5)
-    = 5,000 / 500,000
+        <pre>            0.5 × 10,000
+T_Q = ─────────────────────────
+        10^6 × (1 − 0.5)
+
+             5,000
+    = ─────────────────────
+        10^6 × 0.5
+
+             5,000
+    = ─────────────────────
+           500,000
     = 0.01 s
     = 10 ms</pre>
       </div>
@@ -2392,27 +2435,25 @@ rho = شدت ترافیک (بین 0 و 1)</pre>
       </p>
 
       <p>
-        <strong>نکته:</strong> وقتی rho به 1 نزدیک می‌شود،
+        <strong>نکته:</strong> وقتی ρ به 1 نزدیک می‌شود،
         مخرج کسر به صفر نزدیک می‌شود و T_Q به بی‌نهایت
-        میل می‌کند. این همان پدیده‌ای است که در rho &gt; 1
+        میل می‌کند. این همان پدیده‌ای است که در ρ &gt; 1
         رخ می‌دهد.
       </p>
 
       <h4>ث) میانگین تعداد بسته در صف (N_avg) — فرمول لیتل</h4>
       <p>
         فرمول لیتل (Little's Law) یک رابطه بنیادین در
-        تئوری صف است:
+        تئوری صف است. شکل ساده‌شده آن به این صورت است:
       </p>
 
       <div class="code-block">
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>N_avg = a × (T_Q + T_trans)
-      = lambda / R × 1/(1 - rho) × ... (شکل ساده‌شده)
-
-شکل ساده‌شده:
-N_avg = rho / (1 - rho)</pre>
+        <pre>            ρ
+N_avg = ─────────────
+          1 − ρ</pre>
       </div>
 
       <p>
@@ -2422,15 +2463,20 @@ N_avg = rho / (1 - rho)</pre>
       </p>
 
       <p>
-        <strong>مثال:</strong> اگر <bdi>rho = 0.5</bdi> باشد:
+        <strong>مثال:</strong> اگر <bdi>ρ = 0.5</bdi> باشد:
       </p>
 
       <div class="code-block">
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>N_avg = 0.5 / (1 - 0.5)
-      = 0.5 / 0.5
+        <pre>          0.5
+N_avg = ─────────────
+          1 − 0.5
+
+          0.5
+      = ─────────────
+          0.5
       = 1 packet</pre>
       </div>
 
@@ -2454,8 +2500,8 @@ N_avg = rho / (1 - rho)</pre>
 
       <p>
         این فرمول از این واقعیت می‌آید که وقتی سیگنال با
-        سرعت s در حال حرکت است، به اندازه <code>R × d/s</code>
-        بیت در کانال وجود دارد.
+        سرعت s در حال حرکت است، به اندازه R × (d/s) بیت در
+        کانال وجود دارد.
       </p>
 
       <p>
@@ -2488,7 +2534,9 @@ B = R × T_prop
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>l_b = d / B</pre>
+        <pre>        d
+l_b = ───────
+        B</pre>
       </div>
 
       <p>
@@ -2500,7 +2548,9 @@ B = R × T_prop
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>l_b = 20,000 / 100
+        <pre>        20,000
+l_b = ──────────────
+          100
     = 200 m/bit</pre>
       </div>
 
@@ -2551,13 +2601,13 @@ B = R × T_prop
       </p>
 
       <ul>
-        <li>هر اتصال به‌طور مساوی سهم می‌برد: <code>R/10</code></li>
+        <li>هر اتصال به‌طور مساوی سهم می‌برد: <code>R ÷ 10</code></li>
         <li>
           توان عملیاتی هر اتصال:
-          <code>min(Rs, Rc, R/10)</code>
+          <code>min(Rs, Rc, R ÷ 10)</code>
         </li>
         <li>
-          در عمل، معمولاً Rs یا Rc گلوگاه هستند و R/10
+          در عمل، معمولاً Rs یا Rc گلوگاه هستند و R ÷ 10
           محدودکننده نیست (اگر R بزرگ باشد).
         </li>
       </ul>
@@ -2572,7 +2622,10 @@ B = R × T_prop
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>R/10 = 10 Mbps
+        <pre>            100
+R ÷ 10 = ──────────
+             10
+       = 10 Mbps
 
 throughput = min(1, 2, 10)
            = 1 Mbps</pre>
@@ -3689,15 +3742,17 @@ R = 20 Mbps = 20 × 10^6 bps
 L = 1250 × 8 = 10,000 bit
 s = 3 × 10^8 m/s
 
-d_trans = L / R
-        = 10,000 / (20 × 10^6)
+             10,000
+d_trans = ─────────────────
+          20 × 10^6
         = 5 × 10^-4 s
         = 0.5 ms
 
-d_prop = d / s
-       = 10,000 / (3 × 10^8)
-       = 3.33 × 10^-5 s
-       ≈ 0.033 ms
+             10,000
+d_prop  = ─────────────────
+           3 × 10^8
+        = 3.33 × 10^-5 s
+        ≈ 0.033 ms
 
 d_total = d_trans + d_prop
         = 0.5 + 0.033
@@ -3863,7 +3918,9 @@ T_prop = 10,000 / (2 × 10^8) = 0.05 ms
             <pre>Capacity = 12 Mbps
 Need per user = 4 Mbps
 
-max users = 12 / 4
+             12
+max users = ──────
+              4
           = 3</pre>
           </div>
           <p>
@@ -3891,10 +3948,12 @@ P(5) = C(5, 5) × 0.3^5 × 0.7^0
      ≈ 0.243%
 
 نرخ هر کاربر بسته به k:
-  rate = 12 / k Mbps
+            12
+  rate = ──────── Mbps
+             k
 
-  k=1 → 12 / 1 = 12 Mbps
-  k=5 → 12 / 5 = 2.4 Mbps</pre>
+  k=1 → 12 ÷ 1 = 12 Mbps
+  k=5 → 12 ÷ 5 = 2.4 Mbps</pre>
           </div>
           <p>
             پاسخ بخش دوم:
@@ -3954,4 +4013,4 @@ P(5) = C(5, 5) × 0.3^5 × 0.7^0
 <script src="assets/app.js"></script>
 
 </body>
-  </html>
+            </html>
