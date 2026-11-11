@@ -1444,9 +1444,9 @@
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>        L
-d_trans = ───
-        R
+        <pre>              L
+d_trans = ─────────────
+              R
 
 L = طول بسته (bit)
 R = نرخ لینک (bit/s)</pre>
@@ -1473,10 +1473,10 @@ R = نرخ لینک (bit/s)</pre>
         <div class="code-block-header">
           <span class="code-block-lang">محاسبه</span>
         </div>
-        <pre>          10,000
-d_trans = ───────────
-          100 × 10^6
-        = 10^-4 s
+        <pre>                 10,000
+d_trans = ─────────────────────
+                100 × 10⁶
+        = 10⁻⁴ s
         = 0.1 ms</pre>
       </div>
 
@@ -1828,7 +1828,7 @@ d_trans = ───────────
         <strong>مقدار معمول:</strong> این تأخیر به میزان شلوغی
         روتر بستگی دارد و اصلاً مقدار ثابتی ندارد. در یک
         شبکه شلوغ، تأخیر صف می‌تواند از چند میکروثانیه تا
-        چند میلی‌ثانیه متغیر باشد. در بخش ۹ همین درس، با
+        چند میلی‌ثانیه متغیر باشد. در ادامه همین بخش، با
         مفهوم <strong>شدت ترافیک</strong> (ρ) روش دقیق
         محاسبه میانگین این تأخیر را یاد می‌گیریم.
       </p>
@@ -1865,9 +1865,9 @@ d_trans = ───────────
         <div class="code-block-header">
           <span class="code-block-lang">فرمول تأخیر انتقال</span>
         </div>
-        <pre>        L
-d_trans = ───
-        R
+        <pre>              L
+d_trans = ─────────────
+              R
 
 L = طول بسته (bit)
 R = نرخ انتقال لینک (bps)</pre>
@@ -1884,11 +1884,11 @@ R = نرخ انتقال لینک (bps)</pre>
           <span class="code-block-lang">حل</span>
         </div>
         <pre>L = 1250 × 8 = 10,000 bit
-R = 10^6 bps
+R = 10⁶ bps
 
-             10,000
-d_trans = ────────────
-              10^6
+                 10,000
+d_trans = ─────────────────────
+                  10⁶
         = 0.01 s
         = 10 ms</pre>
       </div>
@@ -1907,12 +1907,12 @@ d_trans = ────────────
           <span class="code-block-lang">حل</span>
         </div>
         <pre>L = 10,000 bit
-R = 10^9 bps
+R = 10⁹ bps
 
-             10,000
-d_trans = ────────────
-              10^9
-        = 10^-5 s
+                 10,000
+d_trans = ─────────────────────
+                  10⁹
+        = 10⁻⁵ s
         = 0.01 ms
         = 10 μs</pre>
       </div>
@@ -1963,9 +1963,9 @@ d_trans = ────────────
         <div class="code-block-header">
           <span class="code-block-lang">فرمول تأخیر انتشار</span>
         </div>
-        <pre>        d
-d_prop = ───
-        s
+        <pre>              d
+d_prop = ─────────────
+              s
 
 d = فاصله فیزیکی (m)
 s = سرعت انتشار سیگنال (m/s)</pre>
@@ -1975,15 +1975,15 @@ s = سرعت انتشار سیگنال (m/s)</pre>
         سرعت انتشار سیگنال:
       </p>
       <ul>
-        <li>در خلأ: <code>c ≈ 3 × 10^8 m/s</code> (سرعت نور)</li>
-        <li>در کابل مسی: <code>≈ 2 × 10^8 m/s</code></li>
-        <li>در فیبر نوری: <code>≈ 2 × 10^8 m/s</code></li>
-        <li>در امواج رادیویی: <code>≈ 3 × 10^8 m/s</code></li>
+        <li>در خلأ: <code>c ≈ 3 × 10⁸ m/s</code> (سرعت نور)</li>
+        <li>در کابل مسی: <code>≈ 2 × 10⁸ m/s</code></li>
+        <li>در فیبر نوری: <code>≈ 2 × 10⁸ m/s</code></li>
+        <li>در امواج رادیویی: <code>≈ 3 × 10⁸ m/s</code></li>
       </ul>
 
       <p>
         <strong>مثال 1:</strong> سیگنال در یک کابل مسی به
-        طول <bdi>20 km</bdi> با سرعت <bdi>2 × 10^8 m/s</bdi>
+        طول <bdi>20 km</bdi> با سرعت <bdi>2 × 10⁸ m/s</bdi>
         حرکت می‌کند. تأخیر انتشار چقدر است؟
       </p>
 
@@ -1992,12 +1992,12 @@ s = سرعت انتشار سیگنال (m/s)</pre>
           <span class="code-block-lang">حل</span>
         </div>
         <pre>d = 20 km = 20,000 m
-s = 2 × 10^8 m/s
+s = 2 × 10⁸ m/s
 
-             20,000
-d_prop = ─────────────────
-          2 × 10^8
-       = 10^-4 s
+                  20,000
+d_prop = ──────────────────────
+                  2 × 10⁸
+       = 10⁻⁴ s
        = 0.1 ms</pre>
       </div>
 
@@ -2008,7 +2008,7 @@ d_prop = ─────────────────
       <p>
         <strong>مثال 2:</strong> سیگنال در یک لینک ماهواره‌ای
         به طول <bdi>200000 km</bdi> با سرعت
-        <bdi>3 × 10^8 m/s</bdi> حرکت می‌کند. تأخیر انتشار
+        <bdi>3 × 10⁸ m/s</bdi> حرکت می‌کند. تأخیر انتشار
         چقدر است؟
       </p>
 
@@ -2016,12 +2016,12 @@ d_prop = ─────────────────
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>d = 200,000 km = 2 × 10^8 m
-s = 3 × 10^8 m/s
+        <pre>d = 200,000 km = 2 × 10⁸ m
+s = 3 × 10⁸ m/s
 
-             2 × 10^8
-d_prop = ─────────────────
-             3 × 10^8
+                 2 × 10⁸
+d_prop = ──────────────────────
+                 3 × 10⁸
        = 0.667 s
        ≈ 667 ms</pre>
       </div>
@@ -2142,9 +2142,9 @@ d_prop = ─────────────────
         </div>
         <pre>d_total = d_trans + d_prop
 
-        L     d
-      = ─── + ───
-        R     s</pre>
+              L          d
+        = ───────── + ─────────
+              R          s</pre>
       </div>
 
       <p>
@@ -2159,20 +2159,20 @@ d_prop = ─────────────────
           <span class="code-block-lang">حل گام‌به‌گام</span>
         </div>
         <pre>L = 1250 × 8 = 10,000 bit
-R = 20 × 10^6 bps
+R = 20 × 10⁶ bps
 d = 10 km = 10,000 m
-s = 3 × 10^8 m/s
+s = 3 × 10⁸ m/s
 
-             10,000
-d_trans = ─────────────────
-          20 × 10^6
-        = 5 × 10^-4 s
+                 10,000
+d_trans = ─────────────────────
+                20 × 10⁶
+        = 5 × 10⁻⁴ s
         = 0.5 ms
 
-             10,000
-d_prop  = ─────────────────
-           3 × 10^8
-        = 3.33 × 10^-5 s
+                 10,000
+d_prop  = ─────────────────────
+                 3 × 10⁸
+        = 3.33 × 10⁻⁵ s
         ≈ 0.033 ms
 
 d_total = d_trans + d_prop
@@ -2201,15 +2201,15 @@ d_total = d_trans + d_prop
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>            N  ⎛  L     di ⎞
-d_total =  ∑  ⎜ ─── + ─── ⎟
-           i=1 ⎝  Ri    s  ⎠</pre>
+        <pre>            N  ⎛   L        di   ⎞
+d_total =  ∑  ⎜ ───────── + ───────── ⎟
+           i=1 ⎝   Ri        s    ⎠</pre>
       </div>
 
       <p>
         <strong>مثال:</strong> مسیر A → R → B با دو لینک یکسان
         (هر کدام <bdi>10 km</bdi> طول، <bdi>1 Mbps</bdi> نرخ،
-        سرعت موج <bdi>10^8 m/s</bdi>). بسته <bdi>10000 bit</bdi>
+        سرعت موج <bdi>10⁸ m/s</bdi>). بسته <bdi>10000 bit</bdi>
         است. تأخیر کل چقدر است؟
       </p>
 
@@ -2218,18 +2218,18 @@ d_total =  ∑  ⎜ ─── + ─── ⎟
           <span class="code-block-lang">حل</span>
         </div>
         <pre>L = 10,000 bit
-R1 = R2 = 10^6 bps
+R1 = R2 = 10⁶ bps
 d1 = d2 = 10,000 m
-s = 10^8 m/s
+s = 10⁸ m/s
 
 Link 1:
-  d_trans1 = 10,000 / 10^6 = 0.01 s = 10 ms
-  d_prop1  = 10,000 / 10^8 = 10^-4 s = 0.1 ms
+  d_trans1 = 10,000 ÷ 10⁶ = 0.01 s = 10 ms
+  d_prop1  = 10,000 ÷ 10⁸ = 10⁻⁴ s = 0.1 ms
   sum1     = 10.1 ms
 
 Link 2:
-  d_trans2 = 10,000 / 10^6 = 0.01 s = 10 ms
-  d_prop2  = 10,000 / 10^8 = 10^-4 s = 0.1 ms
+  d_trans2 = 10,000 ÷ 10⁶ = 0.01 s = 10 ms
+  d_prop2  = 10,000 ÷ 10⁸ = 10⁻⁴ s = 0.1 ms
   sum2     = 10.1 ms
 
 d_total = sum1 + sum2
@@ -2254,7 +2254,7 @@ d_total = sum1 + sum2
           <span class="code-block-lang">فرمول</span>
         </div>
         <pre>        L × a
-ρ = ─────────────
+ρ = ─────────────────
            R
 
 L   = طول بسته (bit)
@@ -2288,7 +2288,7 @@ R   = نرخ انتقال لینک (bps)
 
       <p>
         <strong>مثال:</strong> اگر <bdi>L = 10000 bit</bdi>،
-        <bdi>R = 10^6 bps</bdi>، و <bdi>a = 50 packet/s</bdi>
+        <bdi>R = 10⁶ bps</bdi>، و <bdi>a = 50 packet/s</bdi>
         باشد، شدت ترافیک چقدر است؟
       </p>
 
@@ -2296,12 +2296,12 @@ R   = نرخ انتقال لینک (bps)
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>        10,000 × 50
-ρ = ─────────────────
-            10^6
-        500,000
-    = ─────────────
-          10^6
+        <pre>         10,000 × 50
+ρ = ─────────────────────
+            10⁶
+         500,000
+    = ─────────────────
+           10⁶
     = 0.5</pre>
       </div>
 
@@ -2367,12 +2367,12 @@ R   = نرخ انتقال لینک (bps)
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>        λ
-ρ = ─────────
-        μ
+        <pre>         λ
+ρ = ─────────────────
+         μ
 
-        L × a
-  = ─────────────
+         L × a
+  = ─────────────────
            R</pre>
       </div>
 
@@ -2385,8 +2385,8 @@ R   = نرخ انتقال لینک (bps)
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>        0.8
-ρ = ─────────
+        <pre>         0.8
+ρ = ─────────────────
           1
   = 0.8</pre>
       </div>
@@ -2402,13 +2402,13 @@ R   = نرخ انتقال لینک (bps)
           <span class="code-block-lang">فرمول</span>
         </div>
         <pre>              ρ × L
-T_Q = ─────────────────────
+T_Q = ────────────────────────
         R × (1 − ρ)</pre>
       </div>
 
       <p>
         <strong>مثال:</strong> اگر <bdi>ρ = 0.5</bdi>،
-        <bdi>L = 10000 bit</bdi>، <bdi>R = 10^6 bps</bdi> باشد:
+        <bdi>L = 10000 bit</bdi>، <bdi>R = 10⁶ bps</bdi> باشد:
       </p>
 
       <div class="code-block">
@@ -2416,16 +2416,16 @@ T_Q = ─────────────────────
           <span class="code-block-lang">حل</span>
         </div>
         <pre>            0.5 × 10,000
-T_Q = ─────────────────────────
-        10^6 × (1 − 0.5)
+T_Q = ───────────────────────────
+        10⁶ × (1 − 0.5)
 
-             5,000
-    = ─────────────────────
-        10^6 × 0.5
+              5,000
+    = ──────────────────────
+        10⁶ × 0.5
 
-             5,000
-    = ─────────────────────
-           500,000
+              5,000
+    = ──────────────────────
+            500,000
     = 0.01 s
     = 10 ms</pre>
       </div>
@@ -2451,8 +2451,8 @@ T_Q = ────────────────────────�
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>            ρ
-N_avg = ─────────────
+        <pre>              ρ
+N_avg = ─────────────────
           1 − ρ</pre>
       </div>
 
@@ -2470,13 +2470,13 @@ N_avg = ─────────────
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>          0.5
-N_avg = ─────────────
-          1 − 0.5
+        <pre>             0.5
+N_avg = ─────────────────
+           1 − 0.5
 
-          0.5
-      = ─────────────
-          0.5
+             0.5
+      = ─────────────────
+             0.5
       = 1 packet</pre>
       </div>
 
@@ -2500,12 +2500,12 @@ N_avg = ─────────────
 
       <p>
         این فرمول از این واقعیت می‌آید که وقتی سیگنال با
-        سرعت s در حال حرکت است، به اندازه R × (d/s) بیت در
+        سرعت s در حال حرکت است، به اندازه R × (d ÷ s) بیت در
         کانال وجود دارد.
       </p>
 
       <p>
-        <strong>مثال:</strong> اگر <bdi>R = 10^6 bps</bdi> و
+        <strong>مثال:</strong> اگر <bdi>R = 10⁶ bps</bdi> و
         <bdi>T_prop = 0.1 ms</bdi> باشد:
       </p>
 
@@ -2513,10 +2513,10 @@ N_avg = ─────────────
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>T_prop = 0.1 × 10^-3 s
+        <pre>T_prop = 0.1 × 10⁻³ s
 
 B = R × T_prop
-  = 10^6 × (0.1 × 10^-3)
+  = 10⁶ × (0.1 × 10⁻³)
   = 100 bit</pre>
       </div>
 
@@ -2534,9 +2534,9 @@ B = R × T_prop
         <div class="code-block-header">
           <span class="code-block-lang">فرمول</span>
         </div>
-        <pre>        d
-l_b = ───────
-        B</pre>
+        <pre>              d
+l_b = ─────────────────
+              B</pre>
       </div>
 
       <p>
@@ -2548,9 +2548,9 @@ l_b = ───────
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>        20,000
-l_b = ──────────────
-          100
+        <pre>             20,000
+l_b = ─────────────────
+              100
     = 200 m/bit</pre>
       </div>
 
@@ -2622,9 +2622,9 @@ l_b = ──────────────
         <div class="code-block-header">
           <span class="code-block-lang">حل</span>
         </div>
-        <pre>            100
-R ÷ 10 = ──────────
-             10
+        <pre>             100
+R ÷ 10 = ─────────────────
+              10
        = 10 Mbps
 
 throughput = min(1, 2, 10)
@@ -3738,20 +3738,20 @@ Area code  Exchange  Connection</pre>
               <span class="code-block-lang">حل</span>
             </div>
             <pre>d = 10 km = 10,000 m
-R = 20 Mbps = 20 × 10^6 bps
+R = 20 Mbps = 20 × 10⁶ bps
 L = 1250 × 8 = 10,000 bit
-s = 3 × 10^8 m/s
+s = 3 × 10⁸ m/s
 
-             10,000
-d_trans = ─────────────────
-          20 × 10^6
-        = 5 × 10^-4 s
+                 10,000
+d_trans = ─────────────────────
+                20 × 10⁶
+        = 5 × 10⁻⁴ s
         = 0.5 ms
 
-             10,000
-d_prop  = ─────────────────
-           3 × 10^8
-        = 3.33 × 10^-5 s
+                 10,000
+d_prop  = ─────────────────────
+                 3 × 10⁸
+        = 3.33 × 10⁻⁵ s
         ≈ 0.033 ms
 
 d_total = d_trans + d_prop
@@ -3775,17 +3775,17 @@ d_total = d_trans + d_prop
             </div>
             <pre>L_data = 10,000 bit
 L_ack = 100 × 8 = 800 bit
-R = 20 × 10^6 bps
+R = 20 × 10⁶ bps
 d = 10,000 m
-s = 3 × 10^8 m/s
+s = 3 × 10⁸ m/s
 
-T_trans_data = 10,000 / (20 × 10^6)
+T_trans_data = 10,000 ÷ (20 × 10⁶)
              = 0.5 ms
 
-T_trans_ack = 800 / (20 × 10^6)
+T_trans_ack = 800 ÷ (20 × 10⁶)
             = 0.04 ms
 
-T_prop = 10,000 / (3 × 10^8)
+T_prop = 10,000 ÷ (3 × 10⁸)
        ≈ 0.033 ms
 
 T_cycle = T_trans_data + T_prop
@@ -3793,10 +3793,10 @@ T_cycle = T_trans_data + T_prop
         = 0.5 + 0.033 + 0.04 + 0.033
         = 0.606 ms
 
-گذردهی = داده ارسالی در هر چرخه / زمان چرخه
-       = L_data / T_cycle
-       = 10,000 / (0.606 × 10^-3)
-       ≈ 16.5 × 10^6 bps
+گذردهی = داده ارسالی در هر چرخه ÷ زمان چرخه
+       = L_data ÷ T_cycle
+       = 10,000 ÷ (0.606 × 10⁻³)
+       ≈ 16.5 × 10⁶ bps
        ≈ 16.5 Mbps</pre>
           </div>
           <p>
@@ -3809,7 +3809,7 @@ T_cycle = T_trans_data + T_prop
           <strong>تمرین 3:</strong> یک شبکه با دو میزبان و
           یک مسیریاب به‌صورت A-R-B موجود است. اگر کانال‌ها
           به طول <bdi>10 km</bdi> و سرعت امواج
-          <bdi>10^8 m/s</bdi> باشد و نرخ کانال‌ها
+          <bdi>10⁸ m/s</bdi> باشد و نرخ کانال‌ها
           <bdi>1 Mbps</bdi> باشد، اگر بخواهیم یک فایل
           <bdi>10 MB</bdi> را از A به B ارسال کنیم، بررسی
           کنید که آیا زمان ارسال یکپارچه فایل کمتر است یا
@@ -3819,22 +3819,22 @@ T_cycle = T_trans_data + T_prop
             <div class="code-block-header">
               <span class="code-block-lang">حل</span>
             </div>
-            <pre>File size = 10 × 10^6 byte
-          = 8 × 10^7 bit
+            <pre>File size = 10 × 10⁶ byte
+          = 8 × 10⁷ bit
 d = 10,000 m
-s = 10^8 m/s
-R = 10^6 bps
+s = 10⁸ m/s
+R = 10⁶ bps
 
 حالت 1 — ارسال یکپارچه:
-  T_trans = 8 × 10^7 / 10^6 = 80 s
+  T_trans = 8 × 10⁷ ÷ 10⁶ = 80 s
   T_prop (هر لینک) = 0.1 ms
   T_total = 2 × 80 + 2 × 0.1 ms
           = 160 + 0.2 ms
           ≈ 160.0002 s
 
 حالت 2 — قطعه‌قطعه (10,000 bit هر قطعه):
-  تعداد قطعه‌ها = 8 × 10^7 / 10,000 = 8,000
-  T_trans هر قطعه = 10,000 / 10^6 = 10 ms
+  تعداد قطعه‌ها = 8 × 10⁷ ÷ 10,000 = 8,000
+  T_trans هر قطعه = 10,000 ÷ 10⁶ = 10 ms
   T_prop هر لینک = 0.1 ms
 
   قطعه 1 در B:
@@ -3862,7 +3862,7 @@ R = 10^6 bps
           <strong>تمرین 4:</strong> یک شبکه با دو میزبان و
           یک مسیریاب به‌صورت A-R-B موجود است. اگر کانال‌ها
           به طول <bdi>10 km</bdi> و سرعت امواج
-          <bdi>2 × 10^8 m/s</bdi> باشد و نرخ کانال‌ها
+          <bdi>2 × 10⁸ m/s</bdi> باشد و نرخ کانال‌ها
           <bdi>1 Mbps</bdi> باشد، اگر A ابتدا تعداد
           <bdi>50</bdi> بسته به سمت B ارسال کند و سایز
           بسته‌ها برابر با <bdi>10000 bit</bdi> باشد،
@@ -3873,12 +3873,12 @@ R = 10^6 bps
             </div>
             <pre>N = 50 packet
 L = 10,000 bit
-R = 10^6 bps
+R = 10⁶ bps
 d = 10,000 m
-s = 2 × 10^8 m/s
+s = 2 × 10⁸ m/s
 
-T_trans = 10,000 / 10^6 = 10 ms
-T_prop = 10,000 / (2 × 10^8) = 0.05 ms
+T_trans = 10,000 ÷ 10⁶ = 10 ms
+T_prop = 10,000 ÷ (2 × 10⁸) = 0.05 ms
 
 تأخیر بسته اول:
   T1 = T_trans(A→R) + T_prop(A→R)
@@ -3918,9 +3918,9 @@ T_prop = 10,000 / (2 × 10^8) = 0.05 ms
             <pre>Capacity = 12 Mbps
 Need per user = 4 Mbps
 
-             12
-max users = ──────
-              4
+              12
+max users = ──────────
+               4
           = 3</pre>
           </div>
           <p>
@@ -3948,9 +3948,9 @@ P(5) = C(5, 5) × 0.3^5 × 0.7^0
      ≈ 0.243%
 
 نرخ هر کاربر بسته به k:
-            12
-  rate = ──────── Mbps
-             k
+               12
+  rate = ───────────── Mbps
+                k
 
   k=1 → 12 ÷ 1 = 12 Mbps
   k=5 → 12 ÷ 5 = 2.4 Mbps</pre>
@@ -4013,4 +4013,4 @@ P(5) = C(5, 5) × 0.3^5 × 0.7^0
 <script src="assets/app.js"></script>
 
 </body>
-            </html>
+  </html>
