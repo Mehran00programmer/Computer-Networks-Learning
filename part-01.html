@@ -3620,7 +3620,7 @@ l_b  =   ──────────
     <section class="section fade-in" id="s16">
       <div class="section-head">
         <span class="section-num">16</span>
-        <h2 class="section-title">آدرس‌دهی IP</h2>
+        <h2 class="section-title">آدرس‌دهی <bdi>IP</bdi></h2>
       </div>
 
       <h3>آدرس فیزیکی در برابر آدرس منطقی</h3>
@@ -3629,7 +3629,7 @@ l_b  =   ──────────
         آنها را بدانیم:
       </p>
 
-      <h4>آدرس فیزیکی (MAC Address)</h4>
+      <h4>آدرس فیزیکی (<bdi>MAC Address</bdi>)</h4>
       <ul>
         <li>۴۸ بیت است</li>
         <li>یکتاست</li>
@@ -3639,7 +3639,7 @@ l_b  =   ──────────
         <li>از روی آدرس فقط می‌توان مشخصات تولیدکننده را به دست آورد</li>
       </ul>
 
-      <h4>آدرس منطقی (IP Address)</h4>
+      <h4>آدرس منطقی (<bdi>IP Address</bdi>)</h4>
       <ul>
         <li>یکتاست و توسط انجمن جهانی توزیع شده است</li>
         <li>نحوه توزیع به‌گونه‌ای است که از روی آدرس می‌توان موقعیت جغرافیایی دستگاه را مشخص کرد</li>
@@ -3677,7 +3677,7 @@ l_b  =   ──────────
 
       <p>
         اما خواندن این آدرس‌ها سخت است. بنابراین از
-        نشانه‌گذاری dotted-decimal (اعشاری نقطه‌ای)
+        نشانه‌گذاری <bdi>dotted-decimal</bdi> (اعشاری نقطه‌ای)
         استفاده می‌شود. در این روش، آدرس ۳۲ بیتی را
         به چهار بخش ۸ بیتی تقسیم می‌کنند و هر بخش را
         به یک عدد اعشاری بین ۰ تا ۲۵۵ تبدیل می‌کنند.
@@ -3696,15 +3696,16 @@ l_b  =   ──────────
 
       <p>
         برای تبدیل بین این دو نمایش، هر بایت را جداگانه
-        محاسبه می‌کنیم. مثلاً ۱۰۰۰۰۰۰۰ در باینری برابر
-        ۱۲۸ است، ۰۰۰۰۱۰۱۱ برابر ۱۱ است، ۰۰۰۰۰۰۱۱
-        برابر ۳ است، و ۰۰۰۱۱۱۱۱ برابر ۳۱ است.
+        محاسبه می‌کنیم. مثلاً <bdi>10000000</bdi> در باینری برابر
+        ۱۲۸ است، <bdi>00001011</bdi> برابر ۱۱ است، <bdi>00000011</bdi>
+        برابر ۳ است، و <bdi>00011111</bdi> برابر ۳۱ است.
       </p>
 
       <h3>کلاس‌های آدرس <bdi>IPv4</bdi></h3>
       <p>
-        در آدرس‌دهی کلاسی (Classful Addressing)، فضای
-        آدرس به پنج کلاس تقسیم می‌شود: A، B، C، D، E.
+        در آدرس‌دهی کلاسی (<bdi>Classful Addressing</bdi>)، فضای
+        آدرس به پنج کلاس تقسیم می‌شود: <bdi>A</bdi>، <bdi>B</bdi>،
+        <bdi>C</bdi>، <bdi>D</bdi>، <bdi>E</bdi>.
       </p>
 
       <h4>تشخیص کلاس در نشانه‌گذاری باینری</h4>
@@ -3714,11 +3715,11 @@ l_b  =   ──────────
       </p>
 
       <ul>
-        <li>کلاس A: اگر اولین بیت ۰ باشد (۰xxxxxxx)</li>
-        <li>کلاس B: اگر دو بیت اول ۱۰ باشد (۱۰xxxxxx)</li>
-        <li>کلاس C: اگر سه بیت اول ۱۱۰ باشد (۱۱۰xxxxx)</li>
-        <li>کلاس D: اگر چهار بیت اول ۱۱۱۰ باشد (۱۱۱۰xxxx)</li>
-        <li>کلاس E: اگر چهار بیت اول ۱۱۱۱ باشد (۱۱۱۱xxxx)</li>
+        <li>کلاس <bdi>A</bdi>: اگر اولین بیت ۰ باشد (<code>0xxxxxxx</code>)</li>
+        <li>کلاس <bdi>B</bdi>: اگر دو بیت اول ۱۰ باشد (<code>10xxxxxx</code>)</li>
+        <li>کلاس <bdi>C</bdi>: اگر سه بیت اول ۱۱۰ باشد (<code>110xxxxx</code>)</li>
+        <li>کلاس <bdi>D</bdi>: اگر چهار بیت اول ۱۱۱۰ باشد (<code>1110xxxx</code>)</li>
+        <li>کلاس <bdi>E</bdi>: اگر چهار بیت اول ۱۱۱۱ باشد (<code>1111xxxx</code>)</li>
       </ul>
 
       <h4>تشخیص کلاس در نشانه‌گذاری اعشاری</h4>
@@ -3730,61 +3731,159 @@ l_b  =   ──────────
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>کلاس</th><th>محدوده اولین بایت</th><th>تعداد بیت‌های Netid</th><th>تعداد بیت‌های Hostid</th></tr>
+            <tr><th>کلاس</th><th>محدوده اولین بایت</th><th>تعداد بیت‌های <bdi>NetID</bdi></th><th>تعداد بیت‌های <bdi>HostID</bdi></th></tr>
           </thead>
           <tbody>
-            <tr><td>A</td><td>۰ تا ۱۲۷</td><td>۸</td><td>۲۴</td></tr>
-            <tr><td>B</td><td>۱۲۸ تا ۱۹۱</td><td>۱۶</td><td>۱۶</td></tr>
-            <tr><td>C</td><td>۱۹۲ تا ۲۲۳</td><td>۲۴</td><td>۸</td></tr>
-            <tr><td>D</td><td>۲۲۴ تا ۲۳۹</td><td>Multicast</td><td>—</td></tr>
-            <tr><td>E</td><td>۲۴۰ تا ۲۵۵</td><td>Reserved</td><td>—</td></tr>
+            <tr><td><bdi>A</bdi></td><td>۰ تا ۱۲۷</td><td>۸</td><td>۲۴</td></tr>
+            <tr><td><bdi>B</bdi></td><td>۱۲۸ تا ۱۹۱</td><td>۱۶</td><td>۱۶</td></tr>
+            <tr><td><bdi>C</bdi></td><td>۱۹۲ تا ۲۲۳</td><td>۲۴</td><td>۸</td></tr>
+            <tr><td><bdi>D</bdi></td><td>۲۲۴ تا ۲۳۹</td><td><bdi>Multicast</bdi></td><td>—</td></tr>
+            <tr><td><bdi>E</bdi></td><td>۲۴۰ تا ۲۵۵</td><td><bdi>Reserved</bdi></td><td>—</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h4>ساختار Netid و Hostid</h4>
+      <h3><bdi>NetID</bdi> و <bdi>HostID</bdi> چیست؟</h3>
       <p>
-        در هر کلاس، بخشی از بیت‌ها به شناسه شبکه
-        (<bdi>Netid</bdi>) و بخشی به شناسه میزبان
-        (<bdi>Hostid</bdi>) اختصاص می‌یابد:
+        هر آدرس <bdi>IPv4</bdi> از <strong>دو بخش</strong> ساخته
+        می‌شود، درست مثل یک آدرس پستی که از «نام خیابان» و
+        «شماره پلاک» تشکیل شده است:
       </p>
 
       <ul>
         <li>
-          <strong>کلاس A:</strong> ۸ بیت برای Netid
-          و ۲۴ بیت برای Hostid. یعنی ۱۲۸ بلوک
-          (Netid 0 تا 127) که هر بلوک ۱۶,۷۷۷,۲۱۶
+          <strong>شناسه شبکه (<bdi>NetID</bdi>):</strong> بخش اول
+          (سمت چپ) آدرس است و مشخص می‌کند دستگاه <em>در کدام شبکه</em>
+          قرار دارد. تمام دستگاه‌های یک شبکه <strong><bdi>NetID</bdi> یکسان</strong>
+          دارند (مثل همه خانه‌های یک خیابان که نام خیابان یکسانی دارند).
+        </li>
+        <li>
+          <strong>شناسه میزبان (<bdi>HostID</bdi>):</strong> بخش دوم
+          (سمت راست) آدرس است و مشخص می‌کند <em>کدام دستگاه</em> داخل
+          آن شبکه است. <bdi>HostID</bdi> در یک شبکه <strong>یکتاست</strong>
+          (مثل شماره پلاک که در یک خیابان تکراری نیست).
+        </li>
+      </ul>
+
+      <p>
+        روترها فقط به <bdi>NetID</bdi> نگاه می‌کنند تا بفهمند بسته را
+        باید به کدام شبکه بفرستند. فقط وقتی بسته به شبکه مقصد رسید،
+        از <bdi>HostID</bdi> برای پیدا کردن خود دستگاه استفاده می‌شود.
+      </p>
+
+      <p>
+        <strong>مثال:</strong> آدرس <code>192.168.10.25</code> یک آدرس
+        کلاس <bdi>C</bdi> است (چون اولین بایت آن ۱۹۲ است). در کلاس
+        <bdi>C</bdi> سه بایت اول مربوط به <bdi>NetID</bdi> و بایت آخر
+        مربوط به <bdi>HostID</bdi> است:
+      </p>
+
+      <div class="code-block">
+        <div class="code-block-header">
+          <span class="code-block-lang">مثال</span>
+        </div>
+        <pre>192.168.10 . 25
+└─ NetID ──┘   └ HostID
+
+NetID  = 192.168.10   (شبکه)
+HostID = 25           (میزبان شماره 25 در این شبکه)</pre>
+      </div>
+
+      <p>
+        اینکه چند بیت به <bdi>NetID</bdi> و چند بیت به <bdi>HostID</bdi>
+        برسد، به کلاس آدرس بستگی دارد:
+      </p>
+
+      <div class="diagram">
+        <svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="تقسیم ۳۲ بیت آدرس به NetID و HostID در کلاس‌های A و B و C">
+          <text x="350" y="24" text-anchor="middle" fill="#e6edf3" font-size="14">32 bits</text>
+
+          <text x="70" y="75" text-anchor="end" fill="#e6edf3" font-size="14">Class A</text>
+          <rect x="90" y="50" width="140" height="40" rx="4" fill="rgba(88,166,255,0.15)" stroke="#58a6ff"/>
+          <text x="160" y="75" text-anchor="middle" fill="#58a6ff" font-size="13">NetID (8)</text>
+          <rect x="230" y="50" width="420" height="40" rx="4" fill="rgba(63,185,80,0.15)" stroke="#3fb950"/>
+          <text x="440" y="75" text-anchor="middle" fill="#3fb950" font-size="13">HostID (24)</text>
+
+          <text x="70" y="135" text-anchor="end" fill="#e6edf3" font-size="14">Class B</text>
+          <rect x="90" y="110" width="280" height="40" rx="4" fill="rgba(88,166,255,0.15)" stroke="#58a6ff"/>
+          <text x="230" y="135" text-anchor="middle" fill="#58a6ff" font-size="13">NetID (16)</text>
+          <rect x="370" y="110" width="280" height="40" rx="4" fill="rgba(63,185,80,0.15)" stroke="#3fb950"/>
+          <text x="510" y="135" text-anchor="middle" fill="#3fb950" font-size="13">HostID (16)</text>
+
+          <text x="70" y="195" text-anchor="end" fill="#e6edf3" font-size="14">Class C</text>
+          <rect x="90" y="170" width="420" height="40" rx="4" fill="rgba(88,166,255,0.15)" stroke="#58a6ff"/>
+          <text x="300" y="195" text-anchor="middle" fill="#58a6ff" font-size="13">NetID (24)</text>
+          <rect x="510" y="170" width="140" height="40" rx="4" fill="rgba(63,185,80,0.15)" stroke="#3fb950"/>
+          <text x="580" y="195" text-anchor="middle" fill="#3fb950" font-size="13">HostID (8)</text>
+
+          <text x="90" y="238" text-anchor="start" fill="#8b949e" font-size="12">bit 1</text>
+          <text x="650" y="238" text-anchor="end" fill="#8b949e" font-size="12">bit 32</text>
+        </svg>
+        <div class="diagram-caption">تقسیم ۳۲ بیت آدرس بین شناسه شبکه (آبی) و شناسه میزبان (سبز) در هر کلاس</div>
+      </div>
+
+      <h4>ساختار <bdi>NetID</bdi> و <bdi>HostID</bdi> در هر کلاس</h4>
+      <p>
+        در هر کلاس، بخشی از بیت‌ها به شناسه شبکه
+        (<bdi>NetID</bdi>) و بخشی به شناسه میزبان
+        (<bdi>HostID</bdi>) اختصاص می‌یابد:
+      </p>
+
+      <ul>
+        <li>
+          <strong>کلاس <bdi>A</bdi>:</strong> ۸ بیت برای <bdi>NetID</bdi>
+          و ۲۴ بیت برای <bdi>HostID</bdi>. یعنی ۱۲۸ بلوک
+          (<bdi>NetID</bdi> از <code>0</code> تا <code>127</code>) که هر بلوک ۱۶,۷۷۷,۲۱۶
           آدرس دارد.
         </li>
         <li>
-          <strong>کلاس B:</strong> ۱۶ بیت برای Netid
-          و ۱۶ بیت برای Hostid. یعنی ۱۶,۳۸۴ بلوک
-          (Netid 128.0 تا 191.255) که هر بلوک
+          <strong>کلاس <bdi>B</bdi>:</strong> ۱۶ بیت برای <bdi>NetID</bdi>
+          و ۱۶ بیت برای <bdi>HostID</bdi>. یعنی ۱۶,۳۸۴ بلوک
+          (<bdi>NetID</bdi> از <code>128.0</code> تا <code>191.255</code>) که هر بلوک
           ۶۵,۵۳۶ آدرس دارد.
         </li>
         <li>
-          <strong>کلاس C:</strong> ۲۴ بیت برای Netid
-          و ۸ بیت برای Hostid. یعنی ۲,۰۹۷,۱۵۲ بلوک
-          (Netid 192.0.0 تا 223.255.255) که هر بلوک
+          <strong>کلاس <bdi>C</bdi>:</strong> ۲۴ بیت برای <bdi>NetID</bdi>
+          و ۸ بیت برای <bdi>HostID</bdi>. یعنی ۲,۰۹۷,۱۵۲ بلوک
+          (<bdi>NetID</bdi> از <code>192.0.0</code> تا <code>223.255.255</code>) که هر بلوک
           ۲۵۶ آدرس دارد.
         </li>
         <li>
-          <strong>کلاس D:</strong> برای Multicast
+          <strong>کلاس <bdi>D</bdi>:</strong> برای <bdi>Multicast</bdi>
           استفاده می‌شود و فقط یک بلوک دارد.
         </li>
         <li>
-          <strong>کلاس E:</strong> برای اهداف خاص
+          <strong>کلاس <bdi>E</bdi>:</strong> برای اهداف خاص
           رزرو شده و بیشتر بلوک آن هدر می‌رود.
         </li>
       </ul>
 
+      <div class="callout note">
+        <span class="callout-label">یادآوری</span>
+        <p>
+          در کلاس <bdi>A</bdi>، دو بلوک <code>0</code> و <code>127</code>
+          برای کاربردهای خاص کنار گذاشته شده‌اند (در بخش ۱۷ توضیح داده
+          می‌شود)، بنابراین عملاً همه ۱۲۸ بلوک قابل‌استفاده نیستند.
+        </p>
+      </div>
+
       <h3>ماسک (<bdi>Mask</bdi>)</h3>
       <p>
         یک ماسک، یک عدد دودویی ۳۲ بیتی است که وقتی
-        با یک آدرس در بلوک به‌صورت عملگر AND بیتی
+        با یک آدرس در بلوک به‌صورت عملگر <bdi>AND</bdi> بیتی
         ترکیب می‌شود، آدرس اول بلوک (آدرس شبکه) را
         می‌دهد.
       </p>
+
+      <p>
+        ماسک نشان می‌دهد <strong>کدام بیت‌های آدرس مربوط به شبکه است
+        و کدام مربوط به میزبان</strong>. قاعده ساده است:
+      </p>
+
+      <ul>
+        <li>به‌ازای هر بیتِ <bdi>NetID</bdi>، بیت متناظر در ماسک <strong>۱</strong> است.</li>
+        <li>به‌ازای هر بیتِ <bdi>HostID</bdi>، بیت متناظر در ماسک <strong>۰</strong> است.</li>
+      </ul>
 
       <p>
         ماسک‌های پیش‌فرض برای هر کلاس:
@@ -3793,26 +3892,147 @@ l_b  =   ──────────
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>کلاس</th><th>ماسک باینری</th><th>ماسک اعشاری</th></tr>
+            <tr><th>کلاس</th><th>ماسک باینری</th><th>ماسک اعشاری</th><th>نمایش کوتاه</th></tr>
           </thead>
           <tbody>
-            <tr><td>A</td><td>11111111 00000000 00000000 00000000</td><td>255.0.0.0</td></tr>
-            <tr><td>B</td><td>11111111 11111111 00000000 00000000</td><td>255.255.0.0</td></tr>
-            <tr><td>C</td><td>11111111 11111111 11111111 00000000</td><td>255.255.255.0</td></tr>
+            <tr><td><bdi>A</bdi></td><td class="cell-ltr">11111111 00000000 00000000 00000000</td><td class="cell-ltr">255.0.0.0</td><td class="cell-ltr">/8</td></tr>
+            <tr><td><bdi>B</bdi></td><td class="cell-ltr">11111111 11111111 00000000 00000000</td><td class="cell-ltr">255.255.0.0</td><td class="cell-ltr">/16</td></tr>
+            <tr><td><bdi>C</bdi></td><td class="cell-ltr">11111111 11111111 11111111 00000000</td><td class="cell-ltr">255.255.255.0</td><td class="cell-ltr">/24</td></tr>
           </tbody>
         </table>
       </div>
 
       <p>
-        برای پیدا کردن آدرس شبکه، آدرس مقصد را با ماسک
-        پیش‌فرض AND می‌کنیم. نتیجه، آدرس شبکه است.
+        در «نمایش کوتاه»، عدد بعد از <code>/</code> یعنی تعداد
+        ۱های ماسک (تعداد بیت‌های <bdi>NetID</bdi>). مثلاً
+        <code>192.168.10.25/24</code> یعنی ۲۴ بیت اول، شناسه
+        شبکه است.
       </p>
+
+      <p>
+        برای پیدا کردن آدرس شبکه، آدرس مقصد را با ماسک
+        پیش‌فرض <bdi>AND</bdi> می‌کنیم. نتیجه، آدرس شبکه است.
+      </p>
+
+      <div class="callout note">
+        <span class="callout-label">ماسک زیرشبکه (<bdi>Subnet Mask</bdi>)</span>
+        <p>
+          ماسک‌های بالا «ماسک پیش‌فرض» (ماسک شبکه) هستند. وقتی یک
+          شبکه بزرگ را به چند شبکه کوچک‌تر تقسیم کنیم، تعداد ۱های
+          ماسک بیشتر می‌شود و به آن <strong>ماسک زیرشبکه</strong> می‌گویند.
+          توضیح کامل آن در بخش ۱۸ آمده است.
+        </p>
+      </div>
+
+      <h3>آدرس شبکه (<bdi>Network Address</bdi>)</h3>
+      <p>
+        آدرس شبکه، <strong>اولین آدرس هر بلوک</strong> است و به‌جای
+        یک دستگاه، <strong>خود شبکه</strong> را نشان می‌دهد. در این
+        آدرس، تمام بیت‌های <bdi>HostID</bdi> برابر <strong>۰</strong>
+        است. این آدرس به هیچ میزبانی داده نمی‌شود.
+      </p>
+
+      <h4>روش به‌دست آوردن آدرس شبکه</h4>
+      <p>
+        آدرس <bdi>IP</bdi> دستگاه را بیت‌به‌بیت با ماسک
+        <bdi>AND</bdi> می‌کنیم. جدول درستی <bdi>AND</bdi> این است:
+        نتیجه فقط وقتی ۱ است که <strong>هر دو</strong> بیت ۱ باشند
+        (<code>1 AND 1 = 1</code>، و در بقیه حالت‌ها <code>0</code>).
+        چون ماسک در بخش <bdi>NetID</bdi> همه ۱ است، این بخش بدون
+        تغییر می‌ماند؛ چون در بخش <bdi>HostID</bdi> همه ۰ است، آن
+        بخش صفر می‌شود.
+      </p>
+
+      <p><strong>مثال ۱ (کلاس <bdi>C</bdi>):</strong> آدرس <code>192.168.10.25</code> با ماسک <code>255.255.255.0</code></p>
+
+      <div class="code-block">
+        <div class="code-block-header">
+          <span class="code-block-lang">AND</span>
+        </div>
+        <pre>IP      : 11000000 10101000 00001010 00011001   (192.168.10.25)
+Mask    : 11111111 11111111 11111111 00000000   (255.255.255.0)
+─────────────────────────────────────────────
+Network : 11000000 10101000 00001010 00000000   (192.168.10.0)</pre>
+      </div>
+
+      <p><strong>مثال ۲ (کلاس <bdi>B</bdi>):</strong> آدرس <code>128.11.3.31</code> (همان آدرس مثال بالا) با ماسک <code>255.255.0.0</code></p>
+
+      <div class="code-block">
+        <div class="code-block-header">
+          <span class="code-block-lang">AND</span>
+        </div>
+        <pre>IP      : 10000000 00001011 00000011 00011111   (128.11.3.31)
+Mask    : 11111111 11111111 00000000 00000000   (255.255.0.0)
+─────────────────────────────────────────────
+Network : 10000000 00001011 00000000 00000000   (128.11.0.0)</pre>
+      </div>
+
+      <div class="callout key">
+        <span class="callout-label">روش سریع برای ماسک‌های پیش‌فرض</span>
+        <p>
+          بایت‌هایی که در ماسک <code>255</code> هستند را همان‌طور
+          بنویس، و بایت‌هایی که در ماسک <code>0</code> هستند را صفر کن.
+          مثلاً <code>10.20.30.40</code> با ماسک <code>255.0.0.0</code>
+          می‌شود <code>10.0.0.0</code>، و <code>172.16.45.200</code>
+          با ماسک <code>255.255.0.0</code> می‌شود <code>172.16.0.0</code>.
+        </p>
+      </div>
+
+      <h3>آدرس پخش (<bdi>Broadcast Address</bdi>)</h3>
+      <p>
+        آدرس پخش، <strong>آخرین آدرس هر بلوک</strong> است. پیامی که به
+        این آدرس ارسال شود، به <strong>همه میزبان‌های همان شبکه</strong>
+        می‌رسد. در این آدرس، تمام بیت‌های <bdi>HostID</bdi> برابر
+        <strong>۱</strong> است. این آدرس هم به هیچ میزبانی داده نمی‌شود.
+      </p>
+
+      <h4>روش به‌دست آوردن آدرس پخش</h4>
+      <p>
+        ابتدا آدرس شبکه را پیدا می‌کنیم، سپس تمام بیت‌های
+        <bdi>HostID</bdi> را ۱ می‌کنیم (معادل <bdi>OR</bdi> کردن آدرس
+        با معکوس ماسک).
+      </p>
+
+      <div class="code-block">
+        <div class="code-block-header">
+          <span class="code-block-lang">Broadcast</span>
+        </div>
+        <pre>Network   : 11000000 10101000 00001010 00000000   (192.168.10.0)
+HostID=1  : 00000000 00000000 00000000 11111111   (0.0.0.255)
+─────────────────────────────────────────────
+Broadcast : 11000000 10101000 00001010 11111111   (192.168.10.255)</pre>
+      </div>
+
+      <h4>ساختار یک بلوک آدرس</h4>
+      <ul>
+        <li><strong>اولین آدرس:</strong> آدرس شبکه (<bdi>HostID</bdi> همه ۰)</li>
+        <li><strong>آخرین آدرس:</strong> آدرس پخش (<bdi>HostID</bdi> همه ۱)</li>
+        <li><strong>آدرس‌های بین این دو:</strong> قابل اختصاص به میزبان‌ها</li>
+        <li>
+          تعداد میزبان‌های قابل‌استفاده = <bdi>2<sup>h</sup> − 2</bdi>
+          که <bdi>h</bdi> تعداد بیت‌های <bdi>HostID</bdi> است (دو آدرس
+          شبکه و پخش کم می‌شوند).
+        </li>
+      </ul>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>مثال</th><th>کلاس</th><th>آدرس شبکه</th><th>آدرس پخش</th><th>میزبان قابل‌استفاده</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cell-ltr">10.20.30.40</td><td><bdi>A</bdi></td><td class="cell-ltr">10.0.0.0</td><td class="cell-ltr">10.255.255.255</td><td>۱۶,۷۷۷,۲۱۴</td></tr>
+            <tr><td class="cell-ltr">172.16.45.200</td><td><bdi>B</bdi></td><td class="cell-ltr">172.16.0.0</td><td class="cell-ltr">172.16.255.255</td><td>۶۵,۵۳۴</td></tr>
+            <tr><td class="cell-ltr">192.168.10.25</td><td><bdi>C</bdi></td><td class="cell-ltr">192.168.10.0</td><td class="cell-ltr">192.168.10.255</td><td>۲۵۴</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section fade-in" id="s17">
       <div class="section-head">
         <span class="section-num">17</span>
-        <h2 class="section-title">آدرس‌های خاص در IPv4</h2>
+        <h2 class="section-title">آدرس‌های خاص در <bdi>IPv4</bdi></h2>
       </div>
 
       <p>
@@ -3821,41 +4041,122 @@ l_b  =   ──────────
         معمولی اختصاص داده شوند:
       </p>
 
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>آدرس</th><th>نام</th><th>کاربرد کوتاه</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cell-ltr">0.0.0.0</td><td>این ایستگاه در این شبکه</td><td>مبدأِ میزبانی که هنوز <bdi>IP</bdi> ندارد</td></tr>
+            <tr><td class="cell-ltr">0.HostID</td><td>میزبانی در این شبکه</td><td>اشاره به یک میزبان خاص در شبکه فعلی</td></tr>
+            <tr><td class="cell-ltr">NetID.255</td><td>همه‌پخشی مستقیم</td><td>ارسال به همه میزبان‌های یک شبکه مشخص</td></tr>
+            <tr><td class="cell-ltr">255.255.255.255</td><td>همه‌پخشی محدود</td><td>ارسال به همه میزبان‌های شبکه محلی</td></tr>
+            <tr><td class="cell-ltr">NetID.0</td><td>آدرس شبکه</td><td>نشان‌دهنده خود شبکه</td></tr>
+            <tr><td class="cell-ltr">127.X.X.X</td><td>برگشت حلقه</td><td>ارتباط دستگاه با خودش</td></tr>
+            <tr><td class="cell-ltr">192.168.X.X</td><td>آدرس خصوصی</td><td>شبکه‌های داخلی و پشت <bdi>NAT</bdi></td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <ol class="flow">
         <li>
-          <strong>آدرس 0.0.0.0</strong>
-          <span>یعنی «این ایستگاه در این شبکه» — هنگامی که ایستگاه شماره ندارد. یک میزبان که آدرس IP خود را نمی‌داند، از این آدرس به‌عنوان آدرس مبدأ استفاده می‌کند.</span>
+          <strong>آدرس <bdi class="ltr-plain">0.0.0.0</bdi></strong>
+          <span>
+            یعنی «این ایستگاه در این شبکه» — هنگامی که ایستگاه شماره ندارد.
+            یک میزبان که آدرس <bdi>IP</bdi> خود را نمی‌داند، از این آدرس
+            به‌عنوان آدرس مبدأ استفاده می‌کند.
+            <br><br>
+            این آدرس زمانی استفاده می‌شود که یک میزبان هنوز آدرس <bdi>IP</bdi>
+            دریافت نکرده باشد. در این حالت، میزبان از این آدرس به‌عنوان
+            آدرس مبدأ استفاده می‌کند تا برای دریافت <bdi>IP</bdi> از سرور
+            <bdi>DHCP</bdi> درخواست ارسال کند.
+          </span>
         </li>
         <li>
-          <strong>آدرس 0.hostid</strong>
-          <span>یعنی «میزبانی در این شبکه» — برای ارسال پیام به یک میزبان خاص در همان شبکه.</span>
+          <strong>آدرس <bdi class="ltr-plain">0.HostID</bdi></strong>
+          <span>
+            یعنی «میزبانی در این شبکه» — برای ارسال پیام به یک میزبان خاص
+            در همان شبکه.
+            <br><br>
+            این آدرس برای اشاره به یک میزبان مشخص در شبکه فعلی استفاده
+            می‌شود. در این آدرس، <bdi>NetID</bdi> برابر صفر است و
+            <bdi>HostID</bdi> شماره میزبان موردنظر را مشخص می‌کند.
+          </span>
         </li>
         <li>
-          <strong>آدرس Netid.255</strong>
-          <span>آدرس همه‌پخشی مستقیم (<bdi>Direct Broadcast</bdi>) — توسط روتر برای ارسال پیام به همه میزبان‌های یک شبکه محلی استفاده می‌شود.</span>
+          <strong>آدرس <bdi class="ltr-plain">NetID.255</bdi> (<bdi>Direct Broadcast</bdi>)</strong>
+          <span>
+            آدرس همه‌پخشی مستقیم (<bdi>Direct Broadcast</bdi>).
+            آدرس <bdi class="ltr-plain">NetID.255</bdi> برای ارسال پیام به تمام
+            میزبان‌های یک شبکه مشخص استفاده می‌شود و به آن آدرس همه‌پخشی
+            مستقیم (<bdi>Direct Broadcast</bdi>) می‌گویند.
+            <br><br>
+            در این آدرس، <bdi>NetID</bdi> شبکه مقصد را مشخص می‌کند و
+            <bdi>255</bdi> نشان‌دهنده ارسال پیام به تمام میزبان‌های آن شبکه
+            است. به این روش همه‌پخشی مستقیم (<bdi>Direct Broadcast</bdi>) می‌گویند.
+            <br><br>
+            مثال: <code>192.168.10.255</code> یعنی «پیام را به همه
+            میزبان‌های شبکه <code>192.168.10.0</code> برسان».
+          </span>
         </li>
         <li>
-          <strong>آدرس 255.255.255.255</strong>
-          <span>همه‌پخشی محدود (<bdi>Limited Broadcast</bdi>) — فقط در شبکه‌های محلی قابل استفاده است. توسط میزبان برای ارسال پیام به همه میزبان‌های همان شبکه استفاده می‌شود. روترها این بسته را مسدود می‌کنند تا در شبکه محلی محدود بماند.</span>
+          <strong>آدرس <bdi class="ltr-plain">255.255.255.255</bdi> (<bdi>Limited Broadcast</bdi>)</strong>
+          <span>
+            همه‌پخشی محدود (<bdi>Limited Broadcast</bdi>).
+            آدرس <bdi class="ltr-plain">255.255.255.255</bdi> یک آدرس همه‌پخشی
+            محدود (<bdi>Limited Broadcast</bdi>) است که برای ارسال پیام به
+            تمام میزبان‌های شبکه محلی استفاده می‌شود. روترها این بسته را
+            به شبکه‌های دیگر ارسال نمی‌کنند.
+            <br><br>
+            تفاوت با همه‌پخشی مستقیم: همه‌پخشی محدود همیشه فقط در
+            <em>شبکه‌ای که فرستنده در آن است</em> می‌ماند، اما در همه‌پخشی
+            مستقیم، شبکه مقصد را خودمان با <bdi>NetID</bdi> مشخص می‌کنیم.
+          </span>
         </li>
         <li>
-          <strong>آدرس Netid.0</strong>
-          <span>نشان‌دهنده خود شبکه است.</span>
+          <strong>آدرس <bdi class="ltr-plain">NetID.0</bdi></strong>
+          <span>
+            <bdi class="ltr-plain">NetID.0</bdi> نشان‌دهنده خود شبکه است.
+            (مثلاً <code>192.168.10.0</code> یعنی خود شبکه
+            <code>192.168.10</code>، نه یک دستگاه مشخص در آن.)
+          </span>
         </li>
         <li>
-          <strong>آدرس 127.X.X.X</strong>
-          <span>برگشت حلقه (<bdi>Loopback</bdi>) — بسته‌ای با این آدرس هرگز به شبکه نمی‌رسد و در همان دستگاه برمی‌گردد.</span>
+          <strong>آدرس <bdi class="ltr-plain">127.X.X.X</bdi> (<bdi>Loopback</bdi>)</strong>
+          <span>
+            برگشت حلقه (<bdi>Loopback</bdi>). این آدرس برای برقراری ارتباط
+            کامپیوتر با خودش استفاده می‌شود. بسته‌هایی که به این آدرس
+            ارسال می‌شوند، از دستگاه خارج نمی‌شوند و دوباره به همان
+            دستگاه بازمی‌گردند. به این قابلیت برگشت حلقه
+            (<bdi>Loopback</bdi>) می‌گویند.
+          </span>
         </li>
         <li>
-          <strong>آدرس 192.168.X.X</strong>
-          <span>آدرس غیرمعتبر (Private) — برای استفاده در شبکه‌های داخلی و پشت <bdi>NAT</bdi>.</span>
+          <strong>آدرس <bdi class="ltr-plain">192.168.X.X</bdi> (<bdi>Private IP</bdi>)</strong>
+          <span>
+            آدرس <bdi class="ltr-plain">192.168.X.X</bdi> از محدوده آدرس‌های
+            خصوصی (<bdi>Private IP</bdi>) است که برای شناسایی دستگاه‌ها در
+            شبکه‌های داخلی استفاده می‌شود و مستقیماً در اینترنت عمومی
+            مسیریابی نمی‌شود. این آدرس‌ها برای استفاده در شبکه‌های داخلی
+            و پشت <bdi>NAT</bdi> هستند.
+          </span>
         </li>
       </ol>
+
+      <div class="callout note">
+        <span class="callout-label">محدوده‌های آدرس خصوصی</span>
+        <p>
+          علاوه بر <code>192.168.0.0</code> تا <code>192.168.255.255</code>،
+          دو محدوده خصوصی دیگر هم وجود دارد:
+          <code>10.0.0.0</code> تا <code>10.255.255.255</code> و
+          <code>172.16.0.0</code> تا <code>172.31.255.255</code>.
+        </p>
+      </div>
 
       <h3>میزبان چندخانه (<bdi>Multihomed Host</bdi>)</h3>
       <p>
         یک میزبان چندخانه، میزبانی است که چند رابط شبکه
-        دارد و هر رابط یک آدرس IP مخصوص به خودش دارد.
+        دارد و هر رابط یک آدرس <bdi>IP</bdi> مخصوص به خودش دارد.
         مثلاً یک روتر ممکن است سه رابط شبکه داشته باشد
         که هر کدام به یک شبکه متفاوت متصل است.
       </p>
@@ -3864,15 +4165,34 @@ l_b  =   ──────────
     <section class="section fade-in" id="s18">
       <div class="section-head">
         <span class="section-num">18</span>
-        <h2 class="section-title">زیرشبکه‌بندی (Subnetting)</h2>
+        <h2 class="section-title">زیرشبکه‌بندی (<bdi>Subnetting</bdi>)</h2>
       </div>
 
       <p>
-        آدرس‌های IP در ابتدا با دو سطح سلسله‌مراتبی طراحی
-        شده بودند: Netid و Hostid. اما این ساختار برای
+        آدرس‌های <bdi>IP</bdi> در ابتدا با دو سطح سلسله‌مراتبی طراحی
+        شده بودند: <bdi>NetID</bdi> و <bdi>HostID</bdi>. اما این ساختار برای
         شبکه‌های بزرگ کافی نبود. زیرشبکه‌بندی یک سطح
         سوم به ساختار آدرس اضافه می‌کند.
       </p>
+
+      <h3>چرا زیرشبکه‌بندی لازم است؟</h3>
+      <ul>
+        <li>
+          یک سازمان معمولاً چند شبکه فیزیکی جدا (مثلاً طبقه‌ها یا
+          بخش‌های مختلف) دارد، اما فقط یک <bdi>NetID</bdi> دریافت کرده
+          است. باید همان یک بلوک را بین شبکه‌های خود تقسیم کند.
+        </li>
+        <li>
+          یک بلوک کلاس <bdi>B</bdi> حدود ۶۵ هزار میزبان دارد. قرار دادن
+          همه آنها در یک شبکه، ترافیک پخش را بسیار زیاد می‌کند، و بیشتر
+          آدرس‌ها هم بلااستفاده می‌مانند.
+        </li>
+        <li>
+          با زیرشبکه‌بندی، شبکه بیرونی فقط یک <bdi>NetID</bdi> می‌بیند
+          و تقسیم داخلی از دید اینترنت پنهان می‌ماند. پس جدول
+          مسیریابی اینترنت بزرگ نمی‌شود.
+        </li>
+      </ul>
 
       <h3>مفهوم سلسله‌مراتب در شماره تلفن</h3>
       <p>
@@ -3901,11 +4221,61 @@ Area code  Exchange  Connection</pre>
 
       <ul>
         <li><bdi>Site</bdi> (بخشی از آدرس که شبکه اصلی را نشان می‌دهد)</li>
-        <li><bdi>Subnetid</bdi> (بخشی که زیرشبکه را نشان می‌دهد)</li>
-        <li><bdi>Hostid</bdi> (بخشی که میزبان را نشان می‌دهد)</li>
+        <li><bdi>SubnetID</bdi> (بخشی که زیرشبکه را نشان می‌دهد)</li>
+        <li><bdi>HostID</bdi> (بخشی که میزبان را نشان می‌دهد)</li>
       </ul>
 
-      <h3>ماسک شبکه و ماسک زیرشبکه</h3>
+      <p>
+        ایده اصلی: <strong>چند بیت از ابتدای <bdi>HostID</bdi> را «قرض
+        می‌گیریم» و به آن <bdi>SubnetID</bdi> می‌گوییم</strong>. تعداد کل
+        ۳۲ بیت ثابت می‌ماند:
+      </p>
+
+      <div class="diagram">
+        <svg viewBox="0 0 700 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="آدرس سه سطحی: Site، SubnetID، HostID">
+          <text x="350" y="22" text-anchor="middle" fill="#e6edf3" font-size="14">Class B + 10-bit subnet</text>
+
+          <rect x="30" y="40" width="280" height="44" rx="4" fill="rgba(88,166,255,0.15)" stroke="#58a6ff"/>
+          <text x="170" y="67" text-anchor="middle" fill="#58a6ff" font-size="13">Site / NetID (16)</text>
+          <rect x="310" y="40" width="175" height="44" rx="4" fill="rgba(210,153,34,0.15)" stroke="#d29922"/>
+          <text x="397" y="67" text-anchor="middle" fill="#d29922" font-size="13">SubnetID (10)</text>
+          <rect x="485" y="40" width="105" height="44" rx="4" fill="rgba(63,185,80,0.15)" stroke="#3fb950"/>
+          <text x="537" y="67" text-anchor="middle" fill="#3fb950" font-size="13">HostID (6)</text>
+
+          <rect x="30" y="110" width="280" height="30" rx="4" fill="rgba(139,148,158,0.15)" stroke="#6e7681"/>
+          <text x="170" y="130" text-anchor="middle" fill="#8b949e" font-size="12">1111 1111 1111 1111</text>
+          <rect x="310" y="110" width="175" height="30" rx="4" fill="rgba(139,148,158,0.15)" stroke="#6e7681"/>
+          <text x="397" y="130" text-anchor="middle" fill="#8b949e" font-size="12">1111 1111 11</text>
+          <rect x="485" y="110" width="105" height="30" rx="4" fill="rgba(139,148,158,0.15)" stroke="#6e7681"/>
+          <text x="537" y="130" text-anchor="middle" fill="#8b949e" font-size="12">000000</text>
+
+          <text x="30" y="170" text-anchor="start" fill="#8b949e" font-size="12">Subnet mask = 26 ones + 6 zeros = 255.255.255.192</text>
+        </svg>
+        <div class="diagram-caption">آدرس سه سطحی: ۱۰ بیت از <bdi>HostID</bdi> قرض گرفته شده و به <bdi>SubnetID</bdi> تبدیل شده است</div>
+      </div>
+
+      <h3>ماسک شبکه (<bdi>Network Mask</bdi>)</h3>
+      <p>
+        ماسک شبکه مشخص می‌کند چند بیت از آدرس به <bdi>NetID</bdi> تعلق
+        دارد. در ماسک شبکه، <bdi>n</bdi> بیت اول ۱ و بقیه ۰ است. در
+        آدرس‌دهی کلاسی مقدار <bdi>n</bdi> فقط ۸ (کلاس <bdi>A</bdi>)،
+        ۱۶ (کلاس <bdi>B</bdi>) یا ۲۴ (کلاس <bdi>C</bdi>) می‌تواند باشد.
+      </p>
+      <ul>
+        <li>برای پیدا کردن آدرس شبکه: <bdi>IP AND Network Mask</bdi></li>
+        <li>مقدار <bdi>n</bdi> فقط از روی کلاس آدرس مشخص می‌شود و نیازی به ذخیره جداگانه نیست.</li>
+        <li>روتر خارجی (اینترنت) فقط با همین ماسک و <bdi>NetID</bdi> کار می‌کند.</li>
+      </ul>
+
+      <h3>ماسک زیرشبکه (<bdi>Subnet Mask</bdi>)</h3>
+      <p>
+        ماسک زیرشبکه مشخص می‌کند چند بیت از آدرس به بخش «شبکه + زیرشبکه»
+        تعلق دارد. اگر <bdi>s</bdi> بیت از <bdi>HostID</bdi> را برای
+        <bdi>SubnetID</bdi> قرض بگیریم، تعداد ۱های ماسک زیرشبکه برابر
+        است با <bdi>n + s</bdi> (<bdi>n</bdi> همان تعداد ۱های ماسک
+        پیش‌فرض است). این ماسک فقط داخل سازمان لازم است.
+      </p>
+
       <p>
         ماسک شبکه (<bdi>Network Mask</bdi>) و ماسک
         زیرشبکه (<bdi>Subnet Mask</bdi>) شبیه هم
@@ -3914,34 +4284,57 @@ Area code  Exchange  Connection</pre>
 
       <ul>
         <li>
-          <strong>ماسک شبکه:</strong> n بیت برای
-          Netid و ۳۲-n بیت برای Hostid.
+          <strong>ماسک شبکه:</strong> <bdi>n</bdi> بیت برای
+          <bdi>NetID</bdi> و <bdi>32−n</bdi> بیت برای <bdi>HostID</bdi>.
         </li>
         <li>
-          <strong>ماسک زیرشبکه:</strong> n_i بیت برای
-          Subnetid و ۳۲-n_i بیت برای Hostid.
+          <strong>ماسک زیرشبکه:</strong> <bdi>n_i</bdi> بیت برای
+          <bdi>SubnetID</bdi> و <bdi>32−n_i</bdi> بیت برای <bdi>HostID</bdi>.
         </li>
       </ul>
 
       <p>
         تفاوت اصلی در این است که ماسک زیرشبکه بخشی از
-        Hostid را به Subnetid تبدیل می‌کند. یعنی
+        <bdi>HostID</bdi> را به <bdi>SubnetID</bdi> تبدیل می‌کند. یعنی
         می‌توانید یک شبکه بزرگ را به چند زیرشبکه
         کوچک‌تر تقسیم کنید.
       </p>
 
-      <h3>طراحی زیرشبکه — مثال کلاس C</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>ویژگی</th><th>ماسک شبکه</th><th>ماسک زیرشبکه</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>تعداد ۱ها</td><td><bdi>n</bdi> (۸، ۱۶ یا ۲۴)</td><td><bdi>n + s</bdi> (بیشتر از ماسک پیش‌فرض)</td></tr>
+            <tr><td>مرز آدرس</td><td><bdi>NetID | HostID</bdi></td><td><bdi>NetID + SubnetID | HostID</bdi></td></tr>
+            <tr><td>خروجی <bdi>AND</bdi></td><td>آدرس شبکه</td><td>آدرس زیرشبکه</td></tr>
+            <tr><td>کاربرد</td><td>مسیریابی در اینترنت</td><td>مسیریابی داخل سازمان</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>زیرشبکه‌بندی گام‌به‌گام</h3>
+      <ol>
+        <li>کلاس آدرس را مشخص کن و تعداد ۱های ماسک پیش‌فرض (<bdi>n</bdi>) را بنویس.</li>
+        <li>تعداد زیرشبکه‌های موردنیاز را به نزدیک‌ترین توان ۲ (به بالا) گرد کن: <bdi>2<sup>s</sup></bdi>. مقدار <bdi>s</bdi> تعداد بیت‌های قرضی است.</li>
+        <li>تعداد ۱های ماسک زیرشبکه: <bdi>n + s</bdi>. تعداد ۰ها: <bdi>h = 32 − (n + s)</bdi>.</li>
+        <li>تعداد آدرس هر زیرشبکه: <bdi>2<sup>h</sup></bdi>. میزبان قابل‌استفاده: <bdi>2<sup>h</sup> − 2</bdi>.</li>
+        <li>اندازه هر بلوک = <bdi>256 −</bdi> مقدار آخرین بایت غیرصفر ماسک. شروع زیرشبکه‌ها با همین فاصله جلو می‌رود.</li>
+      </ol>
+
+      <h3>طراحی زیرشبکه — مثال کلاس <bdi>C</bdi></h3>
       <p>
         فرض کنید یک شرکت آدرس <bdi>201.70.64.0</bdi>
-        (کلاس C) گرفته است. شرکت به شش زیرشبکه نیاز
+        (کلاس <bdi>C</bdi>) گرفته است. شرکت به شش زیرشبکه نیاز
         دارد. طراحی زیرشبکه‌ها چگونه است؟
       </p>
 
       <p>
         <strong>حل:</strong> تعداد ۱های ماسک پیش‌فرض
-        ۲۴ است (کلاس C). شرکت به ۶ زیرشبکه نیاز دارد.
+        ۲۴ است (کلاس <bdi>C</bdi>). شرکت به ۶ زیرشبکه نیاز دارد.
         عدد ۶ توانی از ۲ نیست. توان بعدی ۲، عدد ۸
-        است (۲³). پس به ۳ بیت ۱ اضافه نیاز داریم.
+        است (<bdi>2³</bdi>). پس به ۳ بیت ۱ اضافه نیاز داریم.
         تعداد کل ۱های ماسک زیرشبکه ۲۷ است (۲۴+۳).
       </p>
 
@@ -3954,35 +4347,55 @@ Area code  Exchange  Connection</pre>
           <span class="code-block-lang">ماسک</span>
         </div>
         <pre>11111111 11111111 11111111 11100000
-یا 255.255.255.224</pre>
+یا 255.255.255.224  (/27)</pre>
       </div>
 
       <p>
         تعداد زیرشبکه‌ها ۸ است. تعداد آدرس‌های هر
-        زیرشبکه ۲⁵ = ۳۲ است (۵ همان تعداد ۰هاست).
+        زیرشبکه <bdi>2⁵</bdi> = ۳۲ است (۵ همان تعداد ۰هاست).
         زیرشبکه‌ها به این ترتیب خواهند بود:
       </p>
 
       <ul>
-        <li>زیرشبکه ۱: 201.70.64.0 تا 201.70.64.31</li>
-        <li>زیرشبکه ۲: 201.70.64.32 تا 201.70.64.63</li>
-        <li>زیرشبکه ۳: 201.70.64.64 تا 201.70.64.95</li>
+        <li>زیرشبکه ۱: <code>201.70.64.0</code> تا <code>201.70.64.31</code></li>
+        <li>زیرشبکه ۲: <code>201.70.64.32</code> تا <code>201.70.64.63</code></li>
+        <li>زیرشبکه ۳: <code>201.70.64.64</code> تا <code>201.70.64.95</code></li>
         <li>...</li>
-        <li>زیرشبکه ۸: 201.70.64.224 تا 201.70.64.255</li>
+        <li>زیرشبکه ۸: <code>201.70.64.224</code> تا <code>201.70.64.255</code></li>
       </ul>
 
-      <h3>طراحی زیرشبکه — مثال کلاس B</h3>
+      <p>جزئیات کامل هر ۸ زیرشبکه:</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>زیرشبکه</th><th>آدرس شبکه</th><th>اولین میزبان</th><th>آخرین میزبان</th><th>آدرس پخش</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>۱</td><td class="cell-ltr">201.70.64.0</td><td class="cell-ltr">201.70.64.1</td><td class="cell-ltr">201.70.64.30</td><td class="cell-ltr">201.70.64.31</td></tr>
+            <tr><td>۲</td><td class="cell-ltr">201.70.64.32</td><td class="cell-ltr">201.70.64.33</td><td class="cell-ltr">201.70.64.62</td><td class="cell-ltr">201.70.64.63</td></tr>
+            <tr><td>۳</td><td class="cell-ltr">201.70.64.64</td><td class="cell-ltr">201.70.64.65</td><td class="cell-ltr">201.70.64.94</td><td class="cell-ltr">201.70.64.95</td></tr>
+            <tr><td>۴</td><td class="cell-ltr">201.70.64.96</td><td class="cell-ltr">201.70.64.97</td><td class="cell-ltr">201.70.64.126</td><td class="cell-ltr">201.70.64.127</td></tr>
+            <tr><td>۵</td><td class="cell-ltr">201.70.64.128</td><td class="cell-ltr">201.70.64.129</td><td class="cell-ltr">201.70.64.158</td><td class="cell-ltr">201.70.64.159</td></tr>
+            <tr><td>۶</td><td class="cell-ltr">201.70.64.160</td><td class="cell-ltr">201.70.64.161</td><td class="cell-ltr">201.70.64.190</td><td class="cell-ltr">201.70.64.191</td></tr>
+            <tr><td>۷</td><td class="cell-ltr">201.70.64.192</td><td class="cell-ltr">201.70.64.193</td><td class="cell-ltr">201.70.64.222</td><td class="cell-ltr">201.70.64.223</td></tr>
+            <tr><td>۸</td><td class="cell-ltr">201.70.64.224</td><td class="cell-ltr">201.70.64.225</td><td class="cell-ltr">201.70.64.254</td><td class="cell-ltr">201.70.64.255</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>طراحی زیرشبکه — مثال کلاس <bdi>B</bdi></h3>
       <p>
         فرض کنید یک شرکت آدرس <bdi>181.56.0.0</bdi>
-        (کلاس B) گرفته است. شرکت به ۱۰۰۰ زیرشبکه
+        (کلاس <bdi>B</bdi>) گرفته است. شرکت به ۱۰۰۰ زیرشبکه
         نیاز دارد. طراحی زیرشبکه‌ها چگونه است؟
       </p>
 
       <p>
         <strong>حل:</strong> تعداد ۱های ماسک پیش‌فرض
-        ۱۶ است (کلاس B). شرکت به ۱۰۰۰ زیرشبکه نیاز
+        ۱۶ است (کلاس <bdi>B</bdi>). شرکت به ۱۰۰۰ زیرشبکه نیاز
         دارد. عدد ۱۰۰۰ توانی از ۲ نیست. توان بعدی ۲،
-        عدد ۱۰۲۴ است (۲¹⁰). پس به ۱۰ بیت ۱ اضافه
+        عدد ۱۰۲۴ است (<bdi>2¹⁰</bdi>). پس به ۱۰ بیت ۱ اضافه
         نیاز داریم. تعداد کل ۱های ماسک زیرشبکه ۲۶
         است (۱۶+۱۰). تعداد کل ۰ها ۶ است (۳۲-۲۶).
       </p>
@@ -3996,12 +4409,12 @@ Area code  Exchange  Connection</pre>
           <span class="code-block-lang">ماسک</span>
         </div>
         <pre>11111111 11111111 11111111 11000000
-یا 255.255.255.192</pre>
+یا 255.255.255.192  (/26)</pre>
       </div>
 
       <p>
         تعداد زیرشبکه‌ها ۱۰۲۴ است. تعداد آدرس‌های هر
-        زیرشبکه ۲⁶ = ۶۴ است.
+        زیرشبکه <bdi>2⁶</bdi> = ۶۴ است (۶۲ میزبان قابل‌استفاده).
       </p>
 
       <p>
@@ -4009,16 +4422,34 @@ Area code  Exchange  Connection</pre>
       </p>
 
       <ul>
-        <li>زیرشبکه ۱: 181.56.0.0 تا 181.56.0.63</li>
-        <li>زیرشبکه ۲: 181.56.0.64 تا 181.56.0.127</li>
+        <li>زیرشبکه ۱: <code>181.56.0.0</code> تا <code>181.56.0.63</code></li>
+        <li>زیرشبکه ۲: <code>181.56.0.64</code> تا <code>181.56.0.127</code></li>
         <li>...</li>
-        <li>زیرشبکه ۱۰۲۴: 181.56.255.192 تا 181.56.255.255</li>
+        <li>زیرشبکه ۱۰۲۴: <code>181.56.255.192</code> تا <code>181.56.255.255</code></li>
       </ul>
+
+      <h3>جدول ماسک‌های رایج در کلاس <bdi>C</bdi></h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>بیت قرضی</th><th>ماسک</th><th>تعداد زیرشبکه</th><th>آدرس در هر زیرشبکه</th><th>میزبان قابل‌استفاده</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>۱</td><td class="cell-ltr">/25 — 255.255.255.128</td><td>۲</td><td>۱۲۸</td><td>۱۲۶</td></tr>
+            <tr><td>۲</td><td class="cell-ltr">/26 — 255.255.255.192</td><td>۴</td><td>۶۴</td><td>۶۲</td></tr>
+            <tr><td>۳</td><td class="cell-ltr">/27 — 255.255.255.224</td><td>۸</td><td>۳۲</td><td>۳۰</td></tr>
+            <tr><td>۴</td><td class="cell-ltr">/28 — 255.255.255.240</td><td>۱۶</td><td>۱۶</td><td>۱۴</td></tr>
+            <tr><td>۵</td><td class="cell-ltr">/29 — 255.255.255.248</td><td>۳۲</td><td>۸</td><td>۶</td></tr>
+            <tr><td>۶</td><td class="cell-ltr">/30 — 255.255.255.252</td><td>۶۴</td><td>۴</td><td>۲</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3>ماسک‌های مختلف برای زیرشبکه‌های مختلف</h3>
       <p>
         در یک شبکه، می‌توانید برای زیرشبکه‌های مختلف از
-        ماسک‌های مختلف استفاده کنید. مثلاً:
+        ماسک‌های مختلف استفاده کنید (به این روش <bdi>VLSM</bdi> یا
+        ماسک با طول متغیر می‌گویند). مثلاً:
       </p>
 
       <ul>
@@ -4036,6 +4467,27 @@ Area code  Exchange  Connection</pre>
         این تکنیک به شما اجازه می‌دهد که آدرس‌ها را
         بهینه‌تر تخصیص دهید.
       </p>
+
+      <p>
+        مثال تخصیص این پنج زیرشبکه در یک بلوک کلاس <bdi>C</bdi>
+        (<code>192.168.1.0</code>): سه زیرشبکه ۶۴تایی و دو زیرشبکه
+        ۳۲تایی دقیقاً ۲۵۶ آدرس را پر می‌کنند.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>زیرشبکه</th><th>آدرس شبکه</th><th>ماسک</th><th>آدرس پخش</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>۱ (۶۲ میزبان)</td><td class="cell-ltr">192.168.1.0/26</td><td class="cell-ltr">255.255.255.192</td><td class="cell-ltr">192.168.1.63</td></tr>
+            <tr><td>۲ (۶۲ میزبان)</td><td class="cell-ltr">192.168.1.64/26</td><td class="cell-ltr">255.255.255.192</td><td class="cell-ltr">192.168.1.127</td></tr>
+            <tr><td>۳ (۶۲ میزبان)</td><td class="cell-ltr">192.168.1.128/26</td><td class="cell-ltr">255.255.255.192</td><td class="cell-ltr">192.168.1.191</td></tr>
+            <tr><td>۴ (۳۰ میزبان)</td><td class="cell-ltr">192.168.1.192/27</td><td class="cell-ltr">255.255.255.224</td><td class="cell-ltr">192.168.1.223</td></tr>
+            <tr><td>۵ (۳۰ میزبان)</td><td class="cell-ltr">192.168.1.224/27</td><td class="cell-ltr">255.255.255.224</td><td class="cell-ltr">192.168.1.255</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3>قواعد مهم زیرشبکه‌بندی</h3>
       <ul>
@@ -4063,9 +4515,11 @@ Area code  Exchange  Connection</pre>
           <bdi>CIDR</bdi> (<bdi>Classless Inter-Domain Routing</bdi>)
           استفاده می‌شود که آدرس‌دهی را با طول دلخواه
           ممکن می‌کند. در این روش آدرس به‌صورت
-          <code>a.b.c.d/x</code> نوشته می‌شود که x
-          تعداد بیت‌های بخش زیرشبکه است. مثلاً
-          <code>200.23.16.0/23</code>.
+          <code>a.b.c.d/x</code> نوشته می‌شود که <bdi>x</bdi>
+          طول پیشوند شبکه است، یعنی تعداد ۱های ماسک
+          (مجموع بیت‌های <bdi>NetID</bdi> و <bdi>SubnetID</bdi>). مثلاً
+          <code>200.23.16.0/23</code>: ۲۳ بیت اول شبکه است، ماسک
+          <code>255.255.254.0</code> است و این بلوک ۵۱۲ آدرس دارد.
         </p>
       </div>
     </section>
@@ -4366,4 +4820,4 @@ rate per user depends on k:
 <script src="assets/app.js"></script>
 
 </body>
-  </html>
+                      </html>
